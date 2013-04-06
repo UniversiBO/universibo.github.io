@@ -14,3 +14,6 @@ Benvenuti nel nuovo sito web della documentazione tecnica [UniversiBO](https://w
 * [Documentazione in italiano](/v2/)
 
 ## Cosa bolle in pentola
+{% for post in site.posts limit: 5 %}
+### [{{ post.title }}]({{ post.url}})
+{% endfor %}
