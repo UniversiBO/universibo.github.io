@@ -1,0 +1,59 @@
+<html>
+<head>
+<title>File Source for avviso_notice.tpl.php</title>
+<link rel="stylesheet" type="text/css" href="../media/style.css">
+</head>
+<body>
+
+<table border="0" cellspacing="0" cellpadding="0" height="48" width="100%">
+  <tr>
+    <td class="header_top">undefined_package</td>
+  </tr>
+  <tr><td class="header_line"><img src="../media/empty.png" width="1" height="1" border="0" alt=""  /></td></tr>
+  <tr>
+    <td class="header_menu">
+  		  [ <a href="../classtrees_undefined_package.html" class="menu">class tree: undefined_package</a> ]
+		  [ <a href="../elementindex_undefined_package.html" class="menu">index: undefined_package</a> ]
+		  [ <a href="../elementindex.html" class="menu">all elements</a> ]
+    </td>
+  </tr>
+  <tr><td class="header_line"><img src="../media/empty.png" width="1" height="1" border="0" alt=""  /></td></tr>
+</table>
+
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+  <tr valign="top">
+    <td width="200" class="menu">
+	<div id="todolist">
+			<p><a href="../todolist.html">Todo List</a></p>
+	</div>
+      <b>Packages:</b><br />
+              <a href="../li_undefined_package.html">undefined_package</a><br />
+              <a href="../li_DB.html">DB</a><br />
+              <a href="../li_framework.html">framework</a><br />
+              <a href="../li_kronos.html">kronos</a><br />
+              <a href="../li_PHPMailer.html">PHPMailer</a><br />
+              <a href="../li_PHPUnit.html">PHPUnit</a><br />
+              <a href="../li_Smarty.html">Smarty</a><br />
+              <a href="../li_universibo.html">universibo</a><br />
+              <a href="../li_universibo_tests.html">universibo_tests</a><br />
+            <br /><br />
+                  
+      
+          </td>
+    <td>
+      <table cellpadding="10" cellspacing="0" width="100%" border="0"><tr><td valign="top">
+
+<h1 align="center">Source for file avviso_notice.tpl.php</h1>
+<p>Documentation is available at <a href="../undefined_package/_universibo2_universibo_templates_compile_black_%%-59_%%-594270516_avviso_notice_tpl_php.html">avviso_notice.tpl.php</a></p>
+<pre><a name="a1"></a><br />1     <strong>&lt;?php </strong><font color="green">/* Smarty version 2.5.0, created on 2003-11-20 13:00:13</font><a name="a2"></a><br />2     <font color="green">         compiled from avviso_notice.tpl */</font> <strong>?&gt;</strong><a name="a3"></a><br />3     <strong>&lt;?php </strong><strong>$this</strong><strong>-&gt;</strong>_load_plugins<strong>(</strong>array<strong>(</strong><a name="a4"></a><br />4     array<strong>(</strong><font color="#66cccc">'modifier'</font><strong>,</strong> <font color="#66cccc">'default'</font><strong>,</strong> <font color="#66cccc">'avviso_notice.tpl'</font><strong>,</strong> 4<strong>,</strong> false<strong>)</strong><strong>,</strong><a name="a5"></a><br />5     array<strong>(</strong><font color="#66cccc">'modifier'</font><strong>,</strong> <font color="#66cccc">'escape'</font><strong>,</strong> <font color="#66cccc">'avviso_notice.tpl'</font><strong>,</strong> 7<strong>,</strong> false<strong>)</strong><strong>,</strong><strong>)</strong><strong>)</strong>; <strong>?&gt;</strong><strong>&lt;?php </strong><font color="blue">if</font> <strong>(</strong><strong>$this</strong><strong>-&gt;</strong>_tpl_vars<strong>[</strong><font color="#66cccc">'error_notice_present'</font><strong>]</strong> == <font color="#66cccc">'true'</font><strong>)</strong>: <strong>?&gt;</strong><a name="a6"></a><br />6     <a name="a7"></a><br />7     &lt;table width=&quot;70%&quot; border=&quot;0&quot; cellspacing=&quot;1&quot; cellpadding=&quot;3&quot; summary=&quot;&quot;&gt;<a name="a8"></a><br />8     <strong>&lt;?php </strong><font color="blue">if</font> <strong>(</strong><a href="http://www.php.net/count">count</a><strong>(</strong>(array)<strong>$this</strong><strong>-&gt;</strong>_run_mod_handler<strong>(</strong><font color="#66cccc">'default'</font><strong>,</strong> true<strong>,</strong> <strong>@</strong><strong>$this</strong><strong>-&gt;</strong>_tpl_vars<strong>[</strong><font color="#66cccc">'error_notice'</font><strong>]</strong><strong>,</strong> <font color="#66cccc">''</font><strong>)</strong><strong>)</strong><strong>)</strong>:<a name="a9"></a><br />9         <font color="blue">foreach</font> <strong>(</strong>(array)<strong>$this</strong><strong>-&gt;</strong>_run_mod_handler<strong>(</strong><font color="#66cccc">'default'</font><strong>,</strong> true<strong>,</strong> <strong>@</strong><strong>$this</strong><strong>-&gt;</strong>_tpl_vars<strong>[</strong><font color="#66cccc">'error_notice'</font><strong>]</strong><strong>,</strong> <font color="#66cccc">''</font><strong>)</strong> as <strong>$this</strong><strong>-&gt;</strong>_tpl_vars<strong>[</strong><font color="#66cccc">'temp_error_notice'</font><strong>]</strong><strong>)</strong>:<a name="a10"></a><br />10    <strong>?&gt;</strong><a name="a11"></a><br />11    &lt;tr&gt;&lt;td class=&quot;Normal&quot; bgcolor=&quot;#FF0000&quot;&gt;<a name="a12"></a><br />12    <a name="a13"></a><br />13    <strong>&lt;?php </strong>echo <strong>$this</strong><strong>-&gt;</strong>_run_mod_handler<strong>(</strong><font color="#66cccc">'escape'</font><strong>,</strong> true<strong>,</strong> <strong>$this</strong><strong>-&gt;</strong>_tpl_vars<strong>[</strong><font color="#66cccc">'temp_error_notice'</font><strong>]</strong><strong>,</strong> <font color="#66cccc">'html'</font><strong>)</strong>; <strong>?&gt;</strong><a name="a14"></a><br />14    &lt;/td&gt;&lt;/tr&gt;<a name="a15"></a><br />15    <strong>&lt;?php </strong>endforeach; endif; <strong>?&gt;</strong> <a name="a16"></a><br />16    &lt;/table&gt;<a name="a17"></a><br />17    <a name="a18"></a><br />18    <strong>&lt;?php </strong>endif; <strong>?&gt;</strong></pre>
+        <div class="credit">
+		    <hr />
+		    Documentation generated on Fri, 28 Nov 2003 13:08:00 +0100 by <a href="http://www.phpdoc.org">phpDocumentor 1.2.3</a>
+	      </div>
+      </td></tr></table>
+    </td>
+  </tr>
+</table>
+
+</body>
+</html>

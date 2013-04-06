@@ -1,0 +1,1523 @@
+<html>
+<head>
+<title>Docs For Class Krono</title>
+<link rel="stylesheet" type="text/css" href="../media/style.css">
+</head>
+<body>
+
+<table border="0" cellspacing="0" cellpadding="0" height="48" width="100%">
+  <tr>
+    <td class="header_top">kronos</td>
+  </tr>
+  <tr><td class="header_line"><img src="../media/empty.png" width="1" height="1" border="0" alt=""  /></td></tr>
+  <tr>
+    <td class="header_menu">
+  		  [ <a href="../classtrees_kronos.html" class="menu">class tree: kronos</a> ]
+		  [ <a href="../elementindex_kronos.html" class="menu">index: kronos</a> ]
+		  [ <a href="../elementindex.html" class="menu">all elements</a> ]
+    </td>
+  </tr>
+  <tr><td class="header_line"><img src="../media/empty.png" width="1" height="1" border="0" alt=""  /></td></tr>
+</table>
+
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+  <tr valign="top">
+    <td width="200" class="menu">
+	<div id="todolist">
+			<p><a href="../todolist.html">Todo List</a></p>
+	</div>
+      <b>Packages:</b><br />
+              <a href="../li_undefined_package.html">undefined_package</a><br />
+              <a href="../li_DB.html">DB</a><br />
+              <a href="../li_framework.html">framework</a><br />
+              <a href="../li_kronos.html">kronos</a><br />
+              <a href="../li_PHPMailer.html">PHPMailer</a><br />
+              <a href="../li_PHPUnit.html">PHPUnit</a><br />
+              <a href="../li_Smarty.html">Smarty</a><br />
+              <a href="../li_universibo.html">universibo</a><br />
+              <a href="../li_universibo_tests.html">universibo_tests</a><br />
+            <br /><br />
+                        <b>Classes:</b><br />
+        <div class="package">
+		    		<a href="../kronos/Krono.html">Krono</a><br />
+	  </div>
+      
+            <b>Files:</b><br />
+      	  <div class="package">
+			<a href="../kronos/_universibo2_framework_Krono_php.html">		Krono.php
+		</a><br>
+	  </div><br />
+      
+          </td>
+    <td>
+      <table cellpadding="10" cellspacing="0" width="100%" border="0"><tr><td valign="top">
+
+<h1>Class: Krono</h1>
+Source Location: /framework/Krono.php<br /><br />
+
+
+
+<table width="100%" border="0">
+<tr><td valign="top">
+
+<h3><a href="#class_details">Class Overview</a></h3>
+<pre></pre><br />
+<div class="description">Class for compute some calculations on date and time</div><br /><br />
+<h4>Author(s):</h4>
+<ul>
+                                </ul>
+
+
+
+
+                
+          
+  
+<h4>Version:</h4>
+<ul>
+  <li>$Id v 0.6 2003/03/19 20.30.00(CET) marms Exp $</li>
+</ul>
+
+<h4>Copyright:</h4>
+<ul>
+  <li>2002-2003 Holosoft - Tommaso D'Argenio &lt;rajasi@ziobudda.net&gt;</li>
+</ul>
+
+</td>
+
+<td valign="top">
+<h3><a href="#class_vars">Variables</a></h3>
+<ul>
+    <li><a href="../kronos/Krono.html#var$abbr">$abbr</a></li>
+    <li><a href="../kronos/Krono.html#var$data_from">$data_from</a></li>
+    <li><a href="../kronos/Krono.html#var$data_to">$data_to</a></li>
+    <li><a href="../kronos/Krono.html#var$date_format">$date_format</a></li>
+    <li><a href="../kronos/Krono.html#var$day_name_con">$day_name_con</a></li>
+    <li><a href="../kronos/Krono.html#var$day_name_ext">$day_name_ext</a></li>
+    <li><a href="../kronos/Krono.html#var$error">$error</a></li>
+    <li><a href="../kronos/Krono.html#var$lan">$lan</a></li>
+    <li><a href="../kronos/Krono.html#var$month_name_con">$month_name_con</a></li>
+    <li><a href="../kronos/Krono.html#var$month_name_ext">$month_name_ext</a></li>
+    <li><a href="../kronos/Krono.html#var$separator">$separator</a></li>
+    <li><a href="../kronos/Krono.html#var$version">$version</a></li>
+  </ul>
+</td>
+
+<td valign="top">
+<h3><a href="#class_methods">Methods</a></h3>
+<ul>
+    <li><a href="../kronos/Krono.html#methodKrono">Krono</a></li>
+    <li><a href="../kronos/Krono.html#methodatom_date">atom_date</a></li>
+    <li><a href="../kronos/Krono.html#methoddate_to_timestamp">date_to_timestamp</a></li>
+    <li><a href="../kronos/Krono.html#methoddays_diff">days_diff</a></li>
+    <li><a href="../kronos/Krono.html#methodday_to_n">day_to_n</a></li>
+    <li><a href="../kronos/Krono.html#methodexit_on_error">exit_on_error</a></li>
+    <li><a href="../kronos/Krono.html#methodget_nth_day">get_nth_day</a></li>
+    <li><a href="../kronos/Krono.html#methodhow_to">how_to</a></li>
+    <li><a href="../kronos/Krono.html#methodis_day">is_day</a></li>
+    <li><a href="../kronos/Krono.html#methodk_date">k_date</a></li>
+    <li><a href="../kronos/Krono.html#methodk_mktime">k_mktime</a></li>
+    <li><a href="../kronos/Krono.html#methodmonth_to_n">month_to_n</a></li>
+    <li><a href="../kronos/Krono.html#methodnet_timestamp">net_timestamp</a></li>
+    <li><a href="../kronos/Krono.html#methodn_to_day">n_to_day</a></li>
+    <li><a href="../kronos/Krono.html#methodn_to_month">n_to_month</a></li>
+    <li><a href="../kronos/Krono.html#methodoperation">operation</a></li>
+    <li><a href="../kronos/Krono.html#methodswatch_time">swatch_time</a></li>
+    <li><a href="../kronos/Krono.html#methodtimes_add">times_add</a></li>
+    <li><a href="../kronos/Krono.html#methodtimes_diff">times_diff</a></li>
+    <li><a href="../kronos/Krono.html#methodtime_to_text">time_to_text</a></li>
+    <li><a href="../kronos/Krono.html#method_debug">_debug</a></li>
+    <li><a href="../kronos/Krono.html#method_disclaimer">_disclaimer</a></li>
+    <li><a href="../kronos/Krono.html#method_format">_format</a></li>
+    <li><a href="../kronos/Krono.html#method_is_daylight">_is_daylight</a></li>
+    <li><a href="../kronos/Krono.html#method_language">_language</a></li>
+    <li><a href="../kronos/Krono.html#method_update">_update</a></li>
+  </ul>
+</td>
+
+</tr></table>
+<hr />
+
+<table width="100%" border="0"><tr>
+
+
+
+
+<td valign="top">
+<h3>Inherited Variables</h3>
+</td>
+
+<td valign="top">
+<h3>Inherited Methods</h3>
+<div class="tags">
+</div>
+</td>
+
+</tr></table>
+<hr />
+
+<a name="class_details"></a>
+<h3>Class Details</h3>
+<div class="tags">
+[line <a href="..//__filesource/fsource_kronos__frameworkKrono.php.html#a46">46</a>]<br />
+Class for compute some calculations on date and time<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>link:</b>&nbsp;&nbsp;</td><td><a href="http://freshmeat.net/projects/kronoclass/?topic_id=914">KronoClass Home at freshmeat</a></td>
+  </tr>
+  <tr>
+    <td><b>link:</b>&nbsp;&nbsp;</td><td><a href="http://www.phpclasses.org/browse.html/package/943.html">KronoClass Home at phpclasses</a></td>
+  </tr>
+  <tr>
+    <td><b>link:</b>&nbsp;&nbsp;</td><td><a href="http://www.holosoft.it/">Holosoft Home Page</a></td>
+  </tr>
+  <tr>
+    <td><b>version:</b>&nbsp;&nbsp;</td><td>$Id v 0.6 2003/03/19 20.30.00(CET) marms Exp $</td>
+  </tr>
+  <tr>
+    <td><b>copyright:</b>&nbsp;&nbsp;</td><td>2002-2003 Holosoft - Tommaso D'Argenio &lt;rajasi@ziobudda.net&gt;</td>
+  </tr>
+</table>
+</div>
+</div><br /><br />
+<div class="top">[ <a href="#top">Top</a> ]</div><br />
+
+<hr />
+<a name="class_vars"></a>
+<h3>Class Variables</h3>
+<div class="tags">
+	<a name="var$abbr"></a>
+	<p></p>
+	<h4>$abbr = <span class="value"></span></h4>
+	<p>[line <a href="..//__filesource/fsource_kronos__frameworkKrono.php.html#a86">86</a>]</p>
+  Variable for choose long or short day names format<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+
+  <br />
+	<div class="tags">
+  <table border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td><b>Type:</b>&nbsp;&nbsp;</td>
+      <td>mixed</td>
+    </tr>
+      </table>
+	</div><br /><br />
+	<div class="top">[ <a href="#top">Top</a> ]</div><br />
+	<a name="var$data_from"></a>
+	<p></p>
+	<h4>$data_from = <span class="value"></span></h4>
+	<p>[line <a href="..//__filesource/fsource_kronos__frameworkKrono.php.html#a71">71</a>]</p>
+  General purpose use<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>private</td>
+  </tr>
+</table>
+</div>
+
+  <br />
+	<div class="tags">
+  <table border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td><b>Type:</b>&nbsp;&nbsp;</td>
+      <td>mixed</td>
+    </tr>
+      </table>
+	</div><br /><br />
+	<div class="top">[ <a href="#top">Top</a> ]</div><br />
+	<a name="var$data_to"></a>
+	<p></p>
+	<h4>$data_to = <span class="value"></span></h4>
+	<p>[line <a href="..//__filesource/fsource_kronos__frameworkKrono.php.html#a76">76</a>]</p>
+  General purpose use<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>private</td>
+  </tr>
+</table>
+</div>
+
+  <br />
+	<div class="tags">
+  <table border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td><b>Type:</b>&nbsp;&nbsp;</td>
+      <td>mixed</td>
+    </tr>
+      </table>
+	</div><br /><br />
+	<div class="top">[ <a href="#top">Top</a> ]</div><br />
+	<a name="var$date_format"></a>
+	<p></p>
+	<h4>$date_format = <span class="value"></span></h4>
+	<p>[line <a href="..//__filesource/fsource_kronos__frameworkKrono.php.html#a106">106</a>]</p>
+  Set to desidered date format<br /><br />
+  <br />
+	<div class="tags">
+  <table border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td><b>Type:</b>&nbsp;&nbsp;</td>
+      <td>mixed</td>
+    </tr>
+      </table>
+	</div><br /><br />
+	<div class="top">[ <a href="#top">Top</a> ]</div><br />
+	<a name="var$day_name_con"></a>
+	<p></p>
+	<h4>$day_name_con = <span class="value"></span></h4>
+	<p>[line <a href="..//__filesource/fsource_kronos__frameworkKrono.php.html#a56">56</a>]</p>
+  Array that contain the name of days in short format<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>private</td>
+  </tr>
+</table>
+</div>
+
+  <br />
+	<div class="tags">
+  <table border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td><b>Type:</b>&nbsp;&nbsp;</td>
+      <td>mixed</td>
+    </tr>
+      </table>
+	</div><br /><br />
+	<div class="top">[ <a href="#top">Top</a> ]</div><br />
+	<a name="var$day_name_ext"></a>
+	<p></p>
+	<h4>$day_name_ext = <span class="value"></span></h4>
+	<p>[line <a href="..//__filesource/fsource_kronos__frameworkKrono.php.html#a51">51</a>]</p>
+  Array that contain the name of days in long format 	*<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>private</td>
+  </tr>
+</table>
+</div>
+
+  <br />
+	<div class="tags">
+  <table border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td><b>Type:</b>&nbsp;&nbsp;</td>
+      <td>mixed</td>
+    </tr>
+      </table>
+	</div><br /><br />
+	<div class="top">[ <a href="#top">Top</a> ]</div><br />
+	<a name="var$error"></a>
+	<p></p>
+	<h4>$error = <span class="value"></span></h4>
+	<p>[line <a href="..//__filesource/fsource_kronos__frameworkKrono.php.html#a81">81</a>]</p>
+  Used for errors<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>private</td>
+  </tr>
+</table>
+</div>
+
+  <br />
+	<div class="tags">
+  <table border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td><b>Type:</b>&nbsp;&nbsp;</td>
+      <td>mixed</td>
+    </tr>
+      </table>
+	</div><br /><br />
+	<div class="top">[ <a href="#top">Top</a> ]</div><br />
+	<a name="var$lan"></a>
+	<p></p>
+	<h4>$lan = <span class="value"></span></h4>
+	<p>[line <a href="..//__filesource/fsource_kronos__frameworkKrono.php.html#a91">91</a>]</p>
+  Set to desidered language<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+
+  <br />
+	<div class="tags">
+  <table border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td><b>Type:</b>&nbsp;&nbsp;</td>
+      <td>mixed</td>
+    </tr>
+      </table>
+	</div><br /><br />
+	<div class="top">[ <a href="#top">Top</a> ]</div><br />
+	<a name="var$month_name_con"></a>
+	<p></p>
+	<h4>$month_name_con = <span class="value"></span></h4>
+	<p>[line <a href="..//__filesource/fsource_kronos__frameworkKrono.php.html#a66">66</a>]</p>
+  Array that contain the name of month in short format<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>private</td>
+  </tr>
+</table>
+</div>
+
+  <br />
+	<div class="tags">
+  <table border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td><b>Type:</b>&nbsp;&nbsp;</td>
+      <td>mixed</td>
+    </tr>
+      </table>
+	</div><br /><br />
+	<div class="top">[ <a href="#top">Top</a> ]</div><br />
+	<a name="var$month_name_ext"></a>
+	<p></p>
+	<h4>$month_name_ext = <span class="value"></span></h4>
+	<p>[line <a href="..//__filesource/fsource_kronos__frameworkKrono.php.html#a61">61</a>]</p>
+  Array that contain the name of month in long format<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>private</td>
+  </tr>
+</table>
+</div>
+
+  <br />
+	<div class="tags">
+  <table border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td><b>Type:</b>&nbsp;&nbsp;</td>
+      <td>mixed</td>
+    </tr>
+      </table>
+	</div><br /><br />
+	<div class="top">[ <a href="#top">Top</a> ]</div><br />
+	<a name="var$separator"></a>
+	<p></p>
+	<h4>$separator = <span class="value"></span></h4>
+	<p>[line <a href="..//__filesource/fsource_kronos__frameworkKrono.php.html#a111">111</a>]</p>
+  Char for separating date<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+
+  <br />
+	<div class="tags">
+  <table border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td><b>Type:</b>&nbsp;&nbsp;</td>
+      <td>mixed</td>
+    </tr>
+      </table>
+	</div><br /><br />
+	<div class="top">[ <a href="#top">Top</a> ]</div><br />
+	<a name="var$version"></a>
+	<p></p>
+	<h4>$version = <span class="value">'0.6'</span></h4>
+	<p>[line <a href="..//__filesource/fsource_kronos__frameworkKrono.php.html#a96">96</a>]</p>
+  Version number<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>private</td>
+  </tr>
+</table>
+</div>
+
+  <br />
+	<div class="tags">
+  <table border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td><b>Type:</b>&nbsp;&nbsp;</td>
+      <td>mixed</td>
+    </tr>
+      </table>
+	</div><br /><br />
+	<div class="top">[ <a href="#top">Top</a> ]</div><br />
+</div><br />
+
+<hr />
+<a name="class_methods"></a>
+<h3>Class Methods</h3>
+<div class="tags">
+  <hr />
+	<a name="methodKrono"></a>
+	<h3>constructor Krono <span class="smalllinenumber">[line <a href="..//__filesource/fsource_kronos__frameworkKrono.php.html#a121">121</a>]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>void Krono(
+[string
+$lan = 'it'], [string
+$date_format = 'it'], [char
+$separator = '/'])</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Constructor<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>see:</b>&nbsp;&nbsp;</td><td><a href="../kronos/Krono.html#var$date_format">Krono::$date_format</a></td>
+  </tr>
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+
+
+
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$lan</b>&nbsp;&nbsp;</td>
+        <td>The language to use for month/day names</td>
+      </tr>
+          <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$date_format</b>&nbsp;&nbsp;</td>
+        <td>the format for date</td>
+      </tr>
+          <tr>
+        <td class="type">char&nbsp;&nbsp;</td>
+        <td><b>$separator</b>&nbsp;&nbsp;</td>
+        <td>Character to use as date separator</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodatom_date"></a>
+	<h3>method atom_date <span class="smalllinenumber">[line <a href="..//__filesource/fsource_kronos__frameworkKrono.php.html#a689">689</a>]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>date atom_date(
+date
+$date, atom
+$atom)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Return a single component of given date according to format in date_format<br /><br /><p>date example with hour: 03/05/2003 23:43:00 (use only ':' as time separator)</p><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+
+
+
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">date&nbsp;&nbsp;</td>
+        <td><b>$date</b>&nbsp;&nbsp;</td>
+        <td>to extract atom from</td>
+      </tr>
+          <tr>
+        <td class="type">atom&nbsp;&nbsp;</td>
+        <td><b>$atom</b>&nbsp;&nbsp;</td>
+        <td>-&gt; <ul></ul><ul><li>'d' for return day;</li><li>'y' for return last two number of year</li><li>'Y' for return entire year</li><li>'h' for hours</li><li>'i' for minutes</li><li>'s' for seconds</li></ul></td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methoddate_to_timestamp"></a>
+	<h3>method date_to_timestamp <span class="smalllinenumber">[line <a href="..//__filesource/fsource_kronos__frameworkKrono.php.html#a456">456</a>]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>timestamp date_to_timestamp(
+date
+$date)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Trasform a classical date format in unix timestamp format.<br /><br /><p><ul><li>date according to date_format parameter passed on inizialization</li><li>Remember that unix timestamp is the amount of seconds since 1/1/1970</li></ul></p><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>return:</b>&nbsp;&nbsp;</td><td>The date transformed in timestamp</td>
+  </tr>
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+
+
+
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">date&nbsp;&nbsp;</td>
+        <td><b>$date</b>&nbsp;&nbsp;</td>
+        <td>The date to transform</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methoddays_diff"></a>
+	<h3>method days_diff <span class="smalllinenumber">[line <a href="..//__filesource/fsource_kronos__frameworkKrono.php.html#a471">471</a>]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>int days_diff(
+date
+$data_ini, date
+$data_fin)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Define what's the day difference between two given date.<br /><br /><p><ul><li>date according to date_format parameter passed on inizialization</li></ul></p><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>return:</b>&nbsp;&nbsp;</td><td>The difference in days between the two given dates</td>
+  </tr>
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+
+
+
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">date&nbsp;&nbsp;</td>
+        <td><b>$data_ini</b>&nbsp;&nbsp;</td>
+        <td>The start date</td>
+      </tr>
+          <tr>
+        <td class="type">date&nbsp;&nbsp;</td>
+        <td><b>$data_fin</b>&nbsp;&nbsp;</td>
+        <td>The end date</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodday_to_n"></a>
+	<h3>method day_to_n <span class="smalllinenumber">[line <a href="..//__filesource/fsource_kronos__frameworkKrono.php.html#a330">330</a>]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>int day_to_n(
+string
+$day)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Convert the name of a day in its numerical value.<br /><br /><p><ul><li>i.e.: Monday stay for 0, Saturday stay for 6</li></ul></p><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>return:</b>&nbsp;&nbsp;</td><td>the number of day</td>
+  </tr>
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+
+
+
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$day</b>&nbsp;&nbsp;</td>
+        <td>The name of day, short or long.</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodexit_on_error"></a>
+	<h3>method exit_on_error <span class="smalllinenumber">[line <a href="..//__filesource/fsource_kronos__frameworkKrono.php.html#a189">189</a>]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>void exit_on_error(
+)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Function that exit with the error message if given<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>private</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+
+
+
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodget_nth_day"></a>
+	<h3>method get_nth_day <span class="smalllinenumber">[line <a href="..//__filesource/fsource_kronos__frameworkKrono.php.html#a967">967</a>]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>date get_nth_day(
+int
+$number, string
+$weekday, mixed
+$month, [int
+$year = 0])</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Get the date of Nth day of the month ..<br /><br /><p><ul><li>example: what is the date of the 2nd Sunday of April 2003 ???</li></ul></p><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>return:</b>&nbsp;&nbsp;</td><td>The date</td>
+  </tr>
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+
+
+
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">int&nbsp;&nbsp;</td>
+        <td><b>$number</b>&nbsp;&nbsp;</td>
+        <td>The ordinal value to get date</td>
+      </tr>
+          <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$weekday</b>&nbsp;&nbsp;</td>
+        <td>The name of day given in Long or short format</td>
+      </tr>
+          <tr>
+        <td class="type">mixed&nbsp;&nbsp;</td>
+        <td><b>$month</b>&nbsp;&nbsp;</td>
+        <td>the name or number of month</td>
+      </tr>
+          <tr>
+        <td class="type">int&nbsp;&nbsp;</td>
+        <td><b>$year</b>&nbsp;&nbsp;</td>
+        <td>the year number</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodhow_to"></a>
+	<h3>method how_to <span class="smalllinenumber">[line <a href="..//__filesource/fsource_kronos__frameworkKrono.php.html#a641">641</a>]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>int how_to(
+date
+$data)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Define how days left to given date. date according to date_format parameter passed on inizialization<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>return:</b>&nbsp;&nbsp;</td><td>The amount of days between today and given date</td>
+  </tr>
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+
+
+
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">date&nbsp;&nbsp;</td>
+        <td><b>$data</b>&nbsp;&nbsp;</td>
+        <td>The date in traditional format for calculating diff</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodis_day"></a>
+	<h3>method is_day <span class="smalllinenumber">[line <a href="..//__filesource/fsource_kronos__frameworkKrono.php.html#a429">429</a>]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>mixed is_day(
+date
+$data, string
+$day)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Define if the day of date given is equal to day given.<br /><br /><p><ul><li>Is Friday the 22nd of November 2002 ?</li><li>date according to date_format parameter passed on inizialization</li></ul></p><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>return:</b>&nbsp;&nbsp;</td><td>1 if check is true, otherwise the day of date</td>
+  </tr>
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+
+
+
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">date&nbsp;&nbsp;</td>
+        <td><b>$data</b>&nbsp;&nbsp;</td>
+        <td>The date to check</td>
+      </tr>
+          <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$day</b>&nbsp;&nbsp;</td>
+        <td>The name of day to check</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodk_date"></a>
+	<h3>method k_date <span class="smalllinenumber">[line <a href="..//__filesource/fsource_kronos__frameworkKrono.php.html#a769">769</a>]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>string k_date(
+[string
+$format = "%l %d %F %Y"], [timestamp
+$timestamp = 0])</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Date like function. Using the same format functionality<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>return:</b>&nbsp;&nbsp;</td><td>The date according with format given</td>
+  </tr>
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+
+
+
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">timestamp&nbsp;&nbsp;</td>
+        <td><b>$timestamp</b>&nbsp;&nbsp;</td>
+        <td>The time to transform</td>
+      </tr>
+          <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$format</b>&nbsp;&nbsp;</td>
+        <td>format -&gt; <ul><li>valid format parameter:</li><li>%l (L lowercase): Day textual long</li><li>%d: Day of month, 2 digits with leading zeros</li><li>%F: Month textual Long</li><li>%Y: Year, 4 digits</li><li>%y: Year, 2 digits</li><li>%m: Month numeric, 2 digits with leading zeros</li><li>%D: Day textual short</li><li>%M: Month textual short</li><li>%n: Month numeric, without leading zeros</li><li>%j: Day of month, without leading zeros</li></ul></td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodk_mktime"></a>
+	<h3>method k_mktime <span class="smalllinenumber">[line <a href="..//__filesource/fsource_kronos__frameworkKrono.php.html#a662">662</a>]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>timestamp k_mktime(
+array
+$exp)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Work like php native mktime() but with date accordingly to format used<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>return:</b>&nbsp;&nbsp;</td><td>The timestamp calculated on date given</td>
+  </tr>
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>private</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+
+
+
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">array&nbsp;&nbsp;</td>
+        <td><b>$exp</b>&nbsp;&nbsp;</td>
+        <td>The date to transform</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodmonth_to_n"></a>
+	<h3>method month_to_n <span class="smalllinenumber">[line <a href="..//__filesource/fsource_kronos__frameworkKrono.php.html#a377">377</a>]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>int month_to_n(
+string
+$month)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Convert the name of a month in its numerical value.<br /><br /><p><ul><li>i.e.: February stay for 2, December stay for 12</li></ul></p><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>return:</b>&nbsp;&nbsp;</td><td>The number rappresenting the month</td>
+  </tr>
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+
+
+
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$month</b>&nbsp;&nbsp;</td>
+        <td>The name of month, short or long format, in language setted by constructor</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodnet_timestamp"></a>
+	<h3>method net_timestamp <span class="smalllinenumber">[line <a href="..//__filesource/fsource_kronos__frameworkKrono.php.html#a918">918</a>]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>timestamp net_timestamp(
+[mixed
+$server = 'time-a.nist.gov'], [mixed
+$port = 37])</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Return the timestamp from a NIST TIME SERVER on the net. Get the atomic time!<br /><br /><p><ul><li>attention</li><li>have to stay on line for work!!</li></ul></p><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>return:</b>&nbsp;&nbsp;</td><td>The timestamp from internet</td>
+  </tr>
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+
+
+
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodn_to_day"></a>
+	<h3>method n_to_day <span class="smalllinenumber">[line <a href="..//__filesource/fsource_kronos__frameworkKrono.php.html#a357">357</a>]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>string n_to_day(
+int
+$day)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Convert the numerical value of a day in its name for the setted language by constructor.<br /><br /><p><ul><li>Short o long format is choosed by setting the abbr value to true o false</li></ul></p><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>return:</b>&nbsp;&nbsp;</td><td>the name of day in language setted by constructor</td>
+  </tr>
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+
+
+
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">int&nbsp;&nbsp;</td>
+        <td><b>$day</b>&nbsp;&nbsp;</td>
+        <td>The number of day, 0 stay for Sunday and 6 for Saturday</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodn_to_month"></a>
+	<h3>method n_to_month <span class="smalllinenumber">[line <a href="..//__filesource/fsource_kronos__frameworkKrono.php.html#a406">406</a>]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>string n_to_month(
+string
+$month)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Convert the numerical value of a month in its name.<br /><br /><p><ul><li>Short o long format is choosed by setting the abbr value to true o false</li></ul></p><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>return:</b>&nbsp;&nbsp;</td><td>The name of month in language setted by constructor</td>
+  </tr>
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+
+
+
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$month</b>&nbsp;&nbsp;</td>
+        <td>The number of month</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodoperation"></a>
+	<h3>method operation <span class="smalllinenumber">[line <a href="..//__filesource/fsource_kronos__frameworkKrono.php.html#a838">838</a>]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>date operation(
+string
+$operator, date
+$date, string
+$operand)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Perform operation like sum or subtraction on date<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>return:</b>&nbsp;&nbsp;</td><td>The date transformed by calc</td>
+  </tr>
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+
+
+
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$operator</b>&nbsp;&nbsp;</td>
+        <td>Operator may be <ul><li>'+' -&gt; for sum</li><li>'sum' -&gt; for sum</li><li>'add' -&gt; for sum</li><li>'-' -&gt; for subtraction</li><li>'sub'-&gt; for subtraction</li><li>'sot'-&gt; for subtraction</li></ul></td>
+      </tr>
+          <tr>
+        <td class="type">date&nbsp;&nbsp;</td>
+        <td><b>$date</b>&nbsp;&nbsp;</td>
+        <td>The date to calc on</td>
+      </tr>
+          <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$operand</b>&nbsp;&nbsp;</td>
+        <td>is a number plus '%D' for days, '%M' for months, '%Y' for years <ul><li>Example:
+    - Add 1 month to a date:
+    - $obj-&gt;operation('+','10/01/2003','1%M');</li></ul> <ul><li>Subtract 20 days from a date:</li><li>$obj-&gt;operation('-','10/01/2003','20%D');</li></ul></td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodswatch_time"></a>
+	<h3>method swatch_time <span class="smalllinenumber">[line <a href="..//__filesource/fsource_kronos__frameworkKrono.php.html#a940">940</a>]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>string swatch_time(
+)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Returns the current time in swatch .beat format. Remember that 1000 beats = 24 hours<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>return:</b>&nbsp;&nbsp;</td><td>The swatch beat time</td>
+  </tr>
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+
+
+
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodtimes_add"></a>
+	<h3>method times_add <span class="smalllinenumber">[line <a href="..//__filesource/fsource_kronos__frameworkKrono.php.html#a564">564</a>]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>string times_add(
+string
+$time, int
+$add, char
+$what)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Add some minutes or hours to a given time.<br /><br /><p><ul><li>i.e.: (add 2 hours to 14.10 -&gt; result is 16.10)</li><li>Accept only 24H format.</li><li>the time is a string like: &quot;4.50&quot; or &quot;4:50&quot;</li></ul></p><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>return:</b>&nbsp;&nbsp;</td><td>Result is in format HH:mm, return -1 on error</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+
+
+
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$time</b>&nbsp;&nbsp;</td>
+        <td>The time string to transform</td>
+      </tr>
+          <tr>
+        <td class="type">int&nbsp;&nbsp;</td>
+        <td><b>$add</b>&nbsp;&nbsp;</td>
+        <td>The hours or minutes to add</td>
+      </tr>
+          <tr>
+        <td class="type">char&nbsp;&nbsp;</td>
+        <td><b>$what</b>&nbsp;&nbsp;</td>
+        <td>is what add to time <ul><li>&quot;m&quot; -&gt; for add minutes</li><li>&quot;h&quot; -&gt; for add hours</li><li>&quot;t&quot; -&gt; for add time string given in HH:mm format</li></ul></td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodtimes_diff"></a>
+	<h3>method times_diff <span class="smalllinenumber">[line <a href="..//__filesource/fsource_kronos__frameworkKrono.php.html#a502">502</a>]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>string times_diff(
+string
+$time_from, string
+$time_to, [char
+$result_in = "m"])</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Give the difference between two times.<br /><br /><p><ul><li>(i.e.: how minutes from 4.50 to 12.50?).</li><li>Accept only 24H format.</li><li>the time is a string like: &quot;4.50&quot; or &quot;4:50&quot;</li></ul></p><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>return:</b>&nbsp;&nbsp;</td><td>The difference between times according to format given in $result_in</td>
+  </tr>
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+
+
+
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$time_from</b>&nbsp;&nbsp;</td>
+        <td>The start time</td>
+      </tr>
+          <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$time_to</b>&nbsp;&nbsp;</td>
+        <td>The end time</td>
+      </tr>
+          <tr>
+        <td class="type">char&nbsp;&nbsp;</td>
+        <td><b>$result_in</b>&nbsp;&nbsp;</td>
+        <td>The format of result <ul><li>&quot;m&quot; -&gt; for minutes</li><li>&quot;s&quot; -&gt; for seconds</li><li>&quot;h&quot; -&gt; for hours</li></ul></td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodtime_to_text"></a>
+	<h3>method time_to_text <span class="smalllinenumber">[line <a href="..//__filesource/fsource_kronos__frameworkKrono.php.html#a1037">1037</a>]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>string time_to_text(
+int
+$seconds)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Return the literal value of a unix timestamp or seconds <ul><li>i.e.: so 3670 seconds mean 1 hour, 1 minute and 10 seconds.</li></ul><br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>return:</b>&nbsp;&nbsp;</td><td>The seconds transformed in text</td>
+  </tr>
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+
+
+
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">int&nbsp;&nbsp;</td>
+        <td><b>$seconds</b>&nbsp;&nbsp;</td>
+        <td>Number of seconds to transform.</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="method_debug"></a>
+	<h3>method _debug <span class="smalllinenumber">[line <a href="..//__filesource/fsource_kronos__frameworkKrono.php.html#a263">263</a>]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>void _debug(
+)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Print out some debug information<br /><br /><br /><br />
+
+
+
+
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="method_disclaimer"></a>
+	<h3>method _disclaimer <span class="smalllinenumber">[line <a href="..//__filesource/fsource_kronos__frameworkKrono.php.html#a271">271</a>]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>void _disclaimer(
+)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Print out a disclaimer<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>private</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+
+
+
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="method_format"></a>
+	<h3>method _format <span class="smalllinenumber">[line <a href="..//__filesource/fsource_kronos__frameworkKrono.php.html#a210">210</a>]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>string _format(
+)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Return the format string for date function according to date_format parameter and separator<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>private</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+
+
+
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="method_is_daylight"></a>
+	<h3>method _is_daylight <span class="smalllinenumber">[line <a href="..//__filesource/fsource_kronos__frameworkKrono.php.html#a283">283</a>]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>int _is_daylight(
+mixed
+$time)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Return if a given time is daylight saving or not<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>return:</b>&nbsp;&nbsp;</td><td>1 if time is daylight saving 0 otherwise.</td>
+  </tr>
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>private</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+
+
+
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="method_language"></a>
+	<h3>method _language <span class="smalllinenumber">[line <a href="..//__filesource/fsource_kronos__frameworkKrono.php.html#a242">242</a>]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>string _language(
+)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Return the literal name of language code<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>return:</b>&nbsp;&nbsp;</td><td>The long name of language format</td>
+  </tr>
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>private</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+
+
+
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="method_update"></a>
+	<h3>method _update <span class="smalllinenumber">[line <a href="..//__filesource/fsource_kronos__frameworkKrono.php.html#a200">200</a>]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>string _update(
+)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Return the last modified date of class file<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>return:</b>&nbsp;&nbsp;</td><td>The formatted date of this file last modified field</td>
+  </tr>
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>private</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+
+
+
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+</div><br />
+
+        <div class="credit">
+		    <hr />
+		    Documentation generated on Fri, 28 Nov 2003 13:09:41 +0100 by <a href="http://www.phpdoc.org">phpDocumentor 1.2.3</a>
+	      </div>
+      </td></tr></table>
+    </td>
+  </tr>
+</table>
+
+</body>
+</html>

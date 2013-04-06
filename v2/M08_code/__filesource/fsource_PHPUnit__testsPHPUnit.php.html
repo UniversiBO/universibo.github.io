@@ -1,0 +1,59 @@
+<html>
+<head>
+<title>File Source for PHPUnit.php</title>
+<link rel="stylesheet" type="text/css" href="../media/style.css">
+</head>
+<body>
+
+<table border="0" cellspacing="0" cellpadding="0" height="48" width="100%">
+  <tr>
+    <td class="header_top">PHPUnit</td>
+  </tr>
+  <tr><td class="header_line"><img src="../media/empty.png" width="1" height="1" border="0" alt=""  /></td></tr>
+  <tr>
+    <td class="header_menu">
+  		  [ <a href="../classtrees_PHPUnit.html" class="menu">class tree: PHPUnit</a> ]
+		  [ <a href="../elementindex_PHPUnit.html" class="menu">index: PHPUnit</a> ]
+		  [ <a href="../elementindex.html" class="menu">all elements</a> ]
+    </td>
+  </tr>
+  <tr><td class="header_line"><img src="../media/empty.png" width="1" height="1" border="0" alt=""  /></td></tr>
+</table>
+
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+  <tr valign="top">
+    <td width="200" class="menu">
+	<div id="todolist">
+			<p><a href="../todolist.html">Todo List</a></p>
+	</div>
+      <b>Packages:</b><br />
+              <a href="../li_undefined_package.html">undefined_package</a><br />
+              <a href="../li_DB.html">DB</a><br />
+              <a href="../li_framework.html">framework</a><br />
+              <a href="../li_kronos.html">kronos</a><br />
+              <a href="../li_PHPMailer.html">PHPMailer</a><br />
+              <a href="../li_PHPUnit.html">PHPUnit</a><br />
+              <a href="../li_Smarty.html">Smarty</a><br />
+              <a href="../li_universibo.html">universibo</a><br />
+              <a href="../li_universibo_tests.html">universibo_tests</a><br />
+            <br /><br />
+                  
+      
+          </td>
+    <td>
+      <table cellpadding="10" cellspacing="0" width="100%" border="0"><tr><td valign="top">
+
+<h1 align="center">Source for file PHPUnit.php</h1>
+<p>Documentation is available at <a href="../PHPUnit/_universibo2_tests_PHPUnit_php.html">PHPUnit.php</a></p>
+<pre><a name="a1"></a><br />1     <strong>&lt;?php</strong><a name="a2"></a><br />2     <font color="green">//</font><a name="a3"></a><br />3     <font color="green">// +------------------------------------------------------------------------+</font><a name="a4"></a><br />4     <font color="green">// | PEAR :: PHPUnit                                                        |</font><a name="a5"></a><br />5     <font color="green">// +------------------------------------------------------------------------+</font><a name="a6"></a><br />6     <font color="green">// | Copyright (c) 2002-2003 Sebastian Bergmann &lt;sb@sebastian-bergmann.de&gt;. |</font><a name="a7"></a><br />7     <font color="green">// +------------------------------------------------------------------------+</font><a name="a8"></a><br />8     <font color="green">// | This source file is subject to version 3.00 of the PHP License,        |</font><a name="a9"></a><br />9     <font color="green">// | that is available at http://www.php.net/license/3_0.txt.               |</font><a name="a10"></a><br />10    <font color="green">// | If you did not receive a copy of the PHP license and are unable to     |</font><a name="a11"></a><br />11    <font color="green">// | obtain it through the world-wide-web, please send a note to            |</font><a name="a12"></a><br />12    <font color="green">// | license@php.net so we can mail you a copy immediately.                 |</font><a name="a13"></a><br />13    <font color="green">// +------------------------------------------------------------------------+</font><a name="a14"></a><br />14    <font color="green">//</font><a name="a15"></a><br />15    <font color="green">// $Id: PHPUnit.php,v 1.1 2003/09/09 12:57:23 brain_79 Exp $</font><a name="a16"></a><br />16    <font color="green">//</font><a name="a17"></a><br />17    <a name="a18"></a><br />18    <font color="blue">require_once</font> <font color="#66cccc">'PHPUnit/TestCase.php'</font>;<a name="a19"></a><br />19    <font color="blue">require_once</font> <font color="#66cccc">'PHPUnit/TestResult.php'</font>;<a name="a20"></a><br />20    <font color="blue">require_once</font> <font color="#66cccc">'PHPUnit/TestSuite.php'</font>;<a name="a21"></a><br />21    <a name="a22"></a><br />22    <font color="#009999">/**</font><a name="a23"></a><br />23    <font color="#009999"> * PHPUnit runs a TestSuite and returns a TestResult object.</font><a name="a24"></a><br />24    <font color="#009999"> *</font><a name="a25"></a><br />25    <font color="#009999"> * Here is an example:</font><a name="a26"></a><br />26    <font color="#009999"> *</font><a name="a27"></a><br />27    <font color="#009999"> *   &lt;?php</font><a name="a28"></a><br />28    <font color="#009999"> *   require_once 'PHPUnit.php';</font><a name="a29"></a><br />29    <font color="#009999"> *</font><a name="a30"></a><br />30    <font color="#009999"> *   class MathTest extends PHPUnit_TestCase {</font><a name="a31"></a><br />31    <font color="#009999"> *     var $fValue1;</font><a name="a32"></a><br />32    <font color="#009999"> *     var $fValue2;</font><a name="a33"></a><br />33    <font color="#009999"> *</font><a name="a34"></a><br />34    <font color="#009999"> *     function MathTest($name) {</font><a name="a35"></a><br />35    <font color="#009999"> *       $this-&gt;PHPUnit_TestCase($name);</font><a name="a36"></a><br />36    <font color="#009999"> *     }</font><a name="a37"></a><br />37    <font color="#009999"> *</font><a name="a38"></a><br />38    <font color="#009999"> *     function setUp() {</font><a name="a39"></a><br />39    <font color="#009999"> *       $this-&gt;fValue1 = 2;</font><a name="a40"></a><br />40    <font color="#009999"> *       $this-&gt;fValue2 = 3;</font><a name="a41"></a><br />41    <font color="#009999"> *     }</font><a name="a42"></a><br />42    <font color="#009999"> *</font><a name="a43"></a><br />43    <font color="#009999"> *     function testAdd() {</font><a name="a44"></a><br />44    <font color="#009999"> *       $this-&gt;assertTrue($this-&gt;fValue1 + $this-&gt;fValue2 == 5);</font><a name="a45"></a><br />45    <font color="#009999"> *     }</font><a name="a46"></a><br />46    <font color="#009999"> *   }</font><a name="a47"></a><br />47    <font color="#009999"> *</font><a name="a48"></a><br />48    <font color="#009999"> *   $suite = new PHPUnit_TestSuite();</font><a name="a49"></a><br />49    <font color="#009999"> *   $suite-&gt;addTest(new MathTest('testAdd'));</font><a name="a50"></a><br />50    <font color="#009999"> *</font><a name="a51"></a><br />51    <font color="#009999"> *   $result = PHPUnit::run($suite);</font><a name="a52"></a><br />52    <font color="#009999"> *   echo $result-&gt;toHTML();</font><a name="a53"></a><br />53    <font color="#009999"> *   ?&gt;</font><a name="a54"></a><br />54    <font color="#009999"> *</font><a name="a55"></a><br />55    <font color="#009999"> * Alternatively, you can pass a class name to the</font><a name="a56"></a><br />56    <font color="#009999"> * PHPUnit_TestSuite() constructor and let it automatically add all</font><a name="a57"></a><br />57    <font color="#009999"> * methods of that class that start with 'test' to the suite:</font><a name="a58"></a><br />58    <font color="#009999"> *</font><a name="a59"></a><br />59    <font color="#009999"> *   $suite  = new PHPUnit_TestSuite('MathTest');</font><a name="a60"></a><br />60    <font color="#009999"> *   $result = PHPUnit::run($suite);</font><a name="a61"></a><br />61    <font color="#009999"> *   echo $result-&gt;toHTML();</font><a name="a62"></a><br />62    <font color="#009999"> *</font><a name="a63"></a><br />63    <font color="#009999"> *</font><font color="#009999"> </font><strong><font color = "#0099FF">@package</font></strong><font color="#009999"> PHPUnit</font><a name="a64"></a><br />64    <font color="#009999"> *</font><font color="#009999"> </font><strong><font color = "#0099FF">@author</font></strong><font color="#009999">  Sebastian Bergmann &lt;sb@sebastian-bergmann.de&gt;</font><a name="a65"></a><br />65    <font color="#009999"> *</font><font color="#009999"> </font><font color="#009999">          Based upon JUnit, see http://www.junit.org/ for details.</font><a name="a66"></a><br />66    <font color="#009999"> */</font><a name="a67"></a><br />67    <font color="blue">class</font> <a href="../PHPUnit/PHPUnit.html">PHPUnit</a> <strong>{</strong><a name="a68"></a><br />68        <font color="blue">function</font> <strong>&amp;</strong><a href="../PHPUnit/PHPUnit.html#methodrun">run</a><strong>(</strong><strong>&amp;</strong><strong>$suite</strong><strong>)</strong> <strong>{</strong><a name="a69"></a><br />69            <strong>$result</strong> = new <a href="../PHPUnit/PHPUnit_TestResult.html">PHPUnit_TestResult</a><strong>(</strong><strong>)</strong>;<a name="a70"></a><br />70            <strong>$suite</strong><strong>-&gt;</strong>run<strong>(</strong><strong>$result</strong><strong>)</strong>;<a name="a71"></a><br />71    <a name="a72"></a><br />72            <font color="blue">return</font> <strong>$result</strong>;<a name="a73"></a><br />73        <strong>}</strong><a name="a74"></a><br />74    <strong>}</strong><a name="a75"></a><br />75    <strong>?&gt;</strong></pre>
+        <div class="credit">
+		    <hr />
+		    Documentation generated on Fri, 28 Nov 2003 13:11:18 +0100 by <a href="http://www.phpdoc.org">phpDocumentor 1.2.3</a>
+	      </div>
+      </td></tr></table>
+    </td>
+  </tr>
+</table>
+
+</body>
+</html>
