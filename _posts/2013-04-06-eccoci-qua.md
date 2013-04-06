@@ -2,7 +2,7 @@
 layout: post
 title: "Eccoci qua!"
 description: ""
-category: 
+category: Annunci 
 tags: [jekyll]
 author: SbiellONE
 ---
