@@ -1,0 +1,2854 @@
+<html>
+<head>
+<title>Docs For Class DB_common</title>
+<link rel="stylesheet" type="text/css" href="../media/style.css">
+</head>
+<body>
+
+<table border="0" cellspacing="0" cellpadding="0" height="48" width="100%">
+  <tr>
+    <td class="header_top">DB</td>
+  </tr>
+  <tr><td class="header_line"><img src="../media/empty.png" width="1" height="1" border="0" alt=""  /></td></tr>
+  <tr>
+    <td class="header_menu">
+  		  [ <a href="../classtrees_DB.html" class="menu">class tree: DB</a> ]
+		  [ <a href="../elementindex_DB.html" class="menu">index: DB</a> ]
+		  [ <a href="../elementindex.html" class="menu">all elements</a> ]
+    </td>
+  </tr>
+  <tr><td class="header_line"><img src="../media/empty.png" width="1" height="1" border="0" alt=""  /></td></tr>
+</table>
+
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+  <tr valign="top">
+    <td width="200" class="menu">
+	<div id="todolist">
+			<p><a href="../todolist.html">Todo List</a></p>
+	</div>
+      <b>Packages:</b><br />
+              <a href="../li_undefined_package.html">undefined_package</a><br />
+              <a href="../li_DB.html">DB</a><br />
+              <a href="../li_framework.html">framework</a><br />
+              <a href="../li_kronos.html">kronos</a><br />
+              <a href="../li_PHPMailer.html">PHPMailer</a><br />
+              <a href="../li_PHPUnit.html">PHPUnit</a><br />
+              <a href="../li_Smarty.html">Smarty</a><br />
+              <a href="../li_universibo.html">universibo</a><br />
+              <a href="../li_universibo_tests.html">universibo_tests</a><br />
+            <br /><br />
+                        <b>Classes:</b><br />
+        <div class="package">
+		    		<a href="../DB/DB.html">DB</a><br />
+	    		<a href="../DB/DB_common.html">DB_common</a><br />
+	    		<a href="../DB/DB_dbase.html">DB_dbase</a><br />
+	    		<a href="../DB/DB_Error.html">DB_Error</a><br />
+	    		<a href="../DB/DB_fbsql.html">DB_fbsql</a><br />
+	    		<a href="../DB/DB_ibase.html">DB_ibase</a><br />
+	    		<a href="../DB/DB_ifx.html">DB_ifx</a><br />
+	    		<a href="../DB/DB_msql.html">DB_msql</a><br />
+	    		<a href="../DB/DB_mssql.html">DB_mssql</a><br />
+	    		<a href="../DB/DB_mysql.html">DB_mysql</a><br />
+	    		<a href="../DB/DB_oci8.html">DB_oci8</a><br />
+	    		<a href="../DB/DB_odbc.html">DB_odbc</a><br />
+	    		<a href="../DB/DB_pgsql.html">DB_pgsql</a><br />
+	    		<a href="../DB/DB_result.html">DB_result</a><br />
+	    		<a href="../DB/DB_row.html">DB_row</a><br />
+	    		<a href="../DB/DB_sqlite.html">DB_sqlite</a><br />
+	    		<a href="../DB/DB_storage.html">DB_storage</a><br />
+	    		<a href="../DB/DB_sybase.html">DB_sybase</a><br />
+	  </div>
+      
+            <b>Files:</b><br />
+      	  <div class="package">
+			<a href="../DB/_universibo2_framework_DB_common_php.html">		common.php
+		</a><br>
+			<a href="../DB/_universibo2_framework_DB_php.html">		DB.php
+		</a><br>
+			<a href="../DB/_universibo2_framework_DB_dbase_php.html">		dbase.php
+		</a><br>
+			<a href="../DB/_universibo2_framework_DB_fbsql_php.html">		fbsql.php
+		</a><br>
+			<a href="../DB/_universibo2_framework_DB_ibase_php.html">		ibase.php
+		</a><br>
+			<a href="../DB/_universibo2_framework_DB_ifx_php.html">		ifx.php
+		</a><br>
+			<a href="../DB/_universibo2_framework_DB_msql_php.html">		msql.php
+		</a><br>
+			<a href="../DB/_universibo2_framework_DB_mssql_php.html">		mssql.php
+		</a><br>
+			<a href="../DB/_universibo2_framework_DB_mysql_php.html">		mysql.php
+		</a><br>
+			<a href="../DB/_universibo2_framework_DB_oci8_php.html">		oci8.php
+		</a><br>
+			<a href="../DB/_universibo2_framework_DB_odbc_php.html">		odbc.php
+		</a><br>
+			<a href="../DB/_universibo2_framework_DB_pgsql_php.html">		pgsql.php
+		</a><br>
+			<a href="../DB/_universibo2_framework_DB_sqlite_php.html">		sqlite.php
+		</a><br>
+			<a href="../DB/_universibo2_framework_DB_storage_php.html">		storage.php
+		</a><br>
+			<a href="../DB/_universibo2_framework_DB_sybase_php.html">		sybase.php
+		</a><br>
+	  </div><br />
+      
+          </td>
+    <td>
+      <table cellpadding="10" cellspacing="0" width="100%" border="0"><tr><td valign="top">
+
+<h1>Class: DB_common</h1>
+Source Location: /framework/DB/common.php<br /><br />
+
+
+
+<table width="100%" border="0">
+<tr><td valign="top">
+
+<h3><a href="#class_details">Class Overview</a></h3>
+<pre><a href="../undefined_package/PEAR.html">PEAR</a>
+   |
+   --DB_common</pre><br />
+<div class="description">Base class for other PEAR classes.  Provides rudimentary  emulation of destructors.</div><br /><br />
+<h4>Author(s):</h4>
+<ul>
+          <li>Stig Bakken &lt;<a href="mailto:ssb@php.net">mailto:ssb@php.net</a>&gt;</li>
+      </ul>
+
+
+
+
+    
+
+
+</td>
+
+<td valign="top">
+<h3><a href="#class_vars">Variables</a></h3>
+<ul>
+    <li><a href="../DB/DB_common.html#var$dbh">$dbh</a></li>
+    <li><a href="../DB/DB_common.html#var$errorcode_map">$errorcode_map</a></li>
+    <li><a href="../DB/DB_common.html#var$features">$features</a></li>
+    <li><a href="../DB/DB_common.html#var$fetchmode">$fetchmode</a></li>
+    <li><a href="../DB/DB_common.html#var$fetchmode_object_class">$fetchmode_object_class</a></li>
+    <li><a href="../DB/DB_common.html#var$last_query">$last_query</a></li>
+    <li><a href="../DB/DB_common.html#var$options">$options</a></li>
+    <li><a href="../DB/DB_common.html#var$prepared_queries">$prepared_queries</a></li>
+    <li><a href="../DB/DB_common.html#var$prepare_maxstmt">$prepare_maxstmt</a></li>
+    <li><a href="../DB/DB_common.html#var$prepare_tokens">$prepare_tokens</a></li>
+    <li><a href="../DB/DB_common.html#var$prepare_types">$prepare_types</a></li>
+    <li><a href="../DB/DB_common.html#var$type">$type</a></li>
+  </ul>
+</td>
+
+<td valign="top">
+<h3><a href="#class_methods">Methods</a></h3>
+<ul>
+    <li><a href="../DB/DB_common.html#methodDB_common">DB_common</a></li>
+    <li><a href="../DB/DB_common.html#methodaffectedRows">affectedRows</a></li>
+    <li><a href="../DB/DB_common.html#methodautoCommit">autoCommit</a></li>
+    <li><a href="../DB/DB_common.html#methodautoExecute">autoExecute</a></li>
+    <li><a href="../DB/DB_common.html#methodautoPrepare">autoPrepare</a></li>
+    <li><a href="../DB/DB_common.html#methodbuildManipSQL">buildManipSQL</a></li>
+    <li><a href="../DB/DB_common.html#methodcommit">commit</a></li>
+    <li><a href="../DB/DB_common.html#methodcreateSequence">createSequence</a></li>
+    <li><a href="../DB/DB_common.html#methoddropSequence">dropSequence</a></li>
+    <li><a href="../DB/DB_common.html#methoderrorCode">errorCode</a></li>
+    <li><a href="../DB/DB_common.html#methoderrorMessage">errorMessage</a></li>
+    <li><a href="../DB/DB_common.html#methoderrorNative">errorNative</a></li>
+    <li><a href="../DB/DB_common.html#methodexecute">execute</a></li>
+    <li><a href="../DB/DB_common.html#methodexecuteEmulateQuery">executeEmulateQuery</a></li>
+    <li><a href="../DB/DB_common.html#methodexecuteMultiple">executeMultiple</a></li>
+    <li><a href="../DB/DB_common.html#methodfreePrepared">freePrepared</a></li>
+    <li><a href="../DB/DB_common.html#methodgetAll">getAll</a></li>
+    <li><a href="../DB/DB_common.html#methodgetAssoc">getAssoc</a></li>
+    <li><a href="../DB/DB_common.html#methodgetCol">getCol</a></li>
+    <li><a href="../DB/DB_common.html#methodgetListOf">getListOf</a></li>
+    <li><a href="../DB/DB_common.html#methodgetOne">getOne</a></li>
+    <li><a href="../DB/DB_common.html#methodgetOption">getOption</a></li>
+    <li><a href="../DB/DB_common.html#methodgetRow">getRow</a></li>
+    <li><a href="../DB/DB_common.html#methodgetSequenceName">getSequenceName</a></li>
+    <li><a href="../DB/DB_common.html#methodgetTables">getTables</a></li>
+    <li><a href="../DB/DB_common.html#methodlimitQuery">limitQuery</a></li>
+    <li><a href="../DB/DB_common.html#methodmodifyLimitQuery">modifyLimitQuery</a></li>
+    <li><a href="../DB/DB_common.html#methodmodifyQuery">modifyQuery</a></li>
+    <li><a href="../DB/DB_common.html#methodnextId">nextId</a></li>
+    <li><a href="../DB/DB_common.html#methodnumRows">numRows</a></li>
+    <li><a href="../DB/DB_common.html#methodprepare">prepare</a></li>
+    <li><a href="../DB/DB_common.html#methodprovides">provides</a></li>
+    <li><a href="../DB/DB_common.html#methodquery">query</a></li>
+    <li><a href="../DB/DB_common.html#methodquote">quote</a></li>
+    <li><a href="../DB/DB_common.html#methodquoteString">quoteString</a></li>
+    <li><a href="../DB/DB_common.html#methodraiseError">raiseError</a></li>
+    <li><a href="../DB/DB_common.html#methodrollback">rollback</a></li>
+    <li><a href="../DB/DB_common.html#methodsetFetchMode">setFetchMode</a></li>
+    <li><a href="../DB/DB_common.html#methodsetOption">setOption</a></li>
+    <li><a href="../DB/DB_common.html#methodtableInfo">tableInfo</a></li>
+    <li><a href="../DB/DB_common.html#methodtoString">toString</a></li>
+  </ul>
+</td>
+
+</tr></table>
+<hr />
+
+<table width="100%" border="0"><tr>
+
+
+
+<td valign="top">
+<h3>Child classes:</h3>
+<div class="tags">
+<dl>
+<dt><a href="../DB/DB_dbase.html">DB_dbase</a></dt>
+	<dd>DBase class extension</dd>
+</dl>
+<dl>
+<dt><a href="../DB/DB_fbsql.html">DB_fbsql</a></dt>
+	<dd>FireBird class extension</dd>
+</dl>
+<dl>
+<dt><a href="../DB/DB_ibase.html">DB_ibase</a></dt>
+	<dd>InterBase class extension</dd>
+</dl>
+<dl>
+<dt><a href="../DB/DB_ifx.html">DB_ifx</a></dt>
+	<dd>Informix class extension</dd>
+</dl>
+<dl>
+<dt><a href="../DB/DB_msql.html">DB_msql</a></dt>
+	<dd>Mini-SQL class extension</dd>
+</dl>
+<dl>
+<dt><a href="../DB/DB_mssql.html">DB_mssql</a></dt>
+	<dd>Microsoft SQL Server class extension</dd>
+</dl>
+<dl>
+<dt><a href="../DB/DB_mysql.html">DB_mysql</a></dt>
+	<dd>MySql class extension</dd>
+</dl>
+<dl>
+<dt><a href="../DB/DB_oci8.html">DB_oci8</a></dt>
+	<dd>Oracle 8 call-interface class extension</dd>
+</dl>
+<dl>
+<dt><a href="../DB/DB_odbc.html">DB_odbc</a></dt>
+	<dd>ODBC class extension</dd>
+</dl>
+<dl>
+<dt><a href="../DB/DB_pgsql.html">DB_pgsql</a></dt>
+	<dd>PostgreSQL class extension</dd>
+</dl>
+<dl>
+<dt><a href="../DB/DB_sqlite.html">DB_sqlite</a></dt>
+	<dd>PECL SQL-Lite class extension</dd>
+</dl>
+<dl>
+<dt><a href="../DB/DB_sybase.html">DB_sybase</a></dt>
+	<dd>Base class for other PEAR classes.  Provides rudimentary  emulation of destructors.</dd>
+</dl>
+</div>
+</td>
+
+<td valign="top">
+<h3>Inherited Variables</h3>
+<div class="tags">
+<h4>Class: <a href="../undefined_package/PEAR.html">PEAR</a></h4>
+<dl>
+<dt>
+  <a href="../undefined_package/PEAR.html#var$_debug">PEAR::$_debug</a>
+  
+</dt>
+<dd>
+   
+</dd>
+<dt>
+  <a href="../undefined_package/PEAR.html#var$_default_error_handler">PEAR::$_default_error_handler</a>
+  
+</dt>
+<dd>
+   
+</dd>
+<dt>
+  <a href="../undefined_package/PEAR.html#var$_default_error_mode">PEAR::$_default_error_mode</a>
+  
+</dt>
+<dd>
+   
+</dd>
+<dt>
+  <a href="../undefined_package/PEAR.html#var$_default_error_options">PEAR::$_default_error_options</a>
+  
+</dt>
+<dd>
+   
+</dd>
+<dt>
+  <a href="../undefined_package/PEAR.html#var$_error_class">PEAR::$_error_class</a>
+  
+</dt>
+<dd>
+   
+</dd>
+<dt>
+  <a href="../undefined_package/PEAR.html#var$_expected_errors">PEAR::$_expected_errors</a>
+  
+</dt>
+<dd>
+   
+</dd>
+</dl>
+</div>
+</td>
+
+<td valign="top">
+<h3>Inherited Methods</h3>
+<div class="tags">
+<h4>Class: <a href="../undefined_package/PEAR.html">PEAR</a></h4>
+<dl>
+    <dt>
+    <a href="../undefined_package/PEAR.html#methodPEAR">PEAR::PEAR()</a>
+
+  </dt>
+  <dd>
+    Constructor.  Registers this object in  $_PEAR_destructor_object_list for destructor emulation if a  destructor object exists.
+  </dd>
+    <dt>
+    <a href="../undefined_package/PEAR.html#methoddelExpect">PEAR::delExpect()</a>
+
+  </dt>
+  <dd>
+    This method deletes all occurences of the specified element from  the expected error codes stack.
+  </dd>
+    <dt>
+    <a href="../undefined_package/PEAR.html#methodexpectError">PEAR::expectError()</a>
+
+  </dt>
+  <dd>
+    This method is used to tell which errors you expect to get.
+  </dd>
+    <dt>
+    <a href="../undefined_package/PEAR.html#methodgetStaticProperty">PEAR::getStaticProperty()</a>
+
+  </dt>
+  <dd>
+    If you have a class that's mostly/entirely static, and you need static
+  </dd>
+    <dt>
+    <a href="../undefined_package/PEAR.html#methodisError">PEAR::isError()</a>
+
+  </dt>
+  <dd>
+    Tell whether a value is a PEAR error.
+  </dd>
+    <dt>
+    <a href="../undefined_package/PEAR.html#methodloadExtension">PEAR::loadExtension()</a>
+
+  </dt>
+  <dd>
+    OS independant PHP extension load. Remember to take care  on the correct extension name for case sensitive OSes.
+  </dd>
+    <dt>
+    <a href="../undefined_package/PEAR.html#methodpopErrorHandling">PEAR::popErrorHandling()</a>
+
+  </dt>
+  <dd>
+    Pop the last error handler used
+  </dd>
+    <dt>
+    <a href="../undefined_package/PEAR.html#methodpopExpect">PEAR::popExpect()</a>
+
+  </dt>
+  <dd>
+    This method pops one element off the expected error codes  stack.
+  </dd>
+    <dt>
+    <a href="../undefined_package/PEAR.html#methodpushErrorHandling">PEAR::pushErrorHandling()</a>
+
+  </dt>
+  <dd>
+    Push a new error handler on top of the error handler options stack. With this  you can easily override the actual error handler for some code and restore  it later with popErrorHandling.
+  </dd>
+    <dt>
+    <a href="../undefined_package/PEAR.html#methodraiseError">PEAR::raiseError()</a>
+
+  </dt>
+  <dd>
+    This method is a wrapper that returns an instance of the  configured error class with this object's default error  handling applied.  If the $mode and $options parameters are not  specified, the object's defaults are used.
+  </dd>
+    <dt>
+    <a href="../undefined_package/PEAR.html#methodregisterShutdownFunc">PEAR::registerShutdownFunc()</a>
+
+  </dt>
+  <dd>
+    Use this function to register a shutdown method for static  classes.
+  </dd>
+    <dt>
+    <a href="../undefined_package/PEAR.html#methodsetErrorHandling">PEAR::setErrorHandling()</a>
+
+  </dt>
+  <dd>
+    Sets how errors generated by this object should be handled.
+  </dd>
+    <dt>
+    <a href="../undefined_package/PEAR.html#methodthrowError">PEAR::throwError()</a>
+
+  </dt>
+  <dd>
+    Simpler form of raiseError with fewer options.  In most cases  message, code and userinfo are enough.
+  </dd>
+    <dt>
+    <a href="../undefined_package/PEAR.html#method_checkDelExpect">PEAR::_checkDelExpect()</a>
+
+  </dt>
+  <dd>
+    This method checks unsets an error code if available
+  </dd>
+    <dt>
+    <a href="../undefined_package/PEAR.html#method_PEAR">PEAR::_PEAR()</a>
+
+  </dt>
+  <dd>
+    Destructor (the emulated type of...).  Does nothing right now,  but is included for forward compatibility, so subclass  destructors should always call it.
+  </dd>
+  </dl>
+</div>
+</td>
+
+</tr></table>
+<hr />
+
+<a name="class_details"></a>
+<h3>Class Details</h3>
+<div class="tags">
+[line <a href="..//__filesource/fsource_DB__frameworkDBcommon.php.html#a33">33</a>]<br />
+Base class for other PEAR classes.  Provides rudimentary  emulation of destructors.<br /><br /><p>If you want a destructor in your class, inherit PEAR and make a  destructor method called _yourclassname (same name as the  constructor, but with a &quot;_&quot; prefix).  Also, in your constructor you  have to call the PEAR constructor: $this-&gt;PEAR();.  The destructor method will be called without parameters.  Note that  at in some SAPI implementations (such as Apache), any output during  the request shutdown (in which destructors are called) seems to be  discarded.  If you need to get any debug information from your  destructor, use error_log(), syslog() or something similar.</p><p>IMPORTANT! To use the emulated destructors you need to create the  objects by reference, ej: $obj =&amp; new PEAR_child;</p><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>author:</b>&nbsp;&nbsp;</td><td>Stig Bakken &lt;<a href="mailto:ssb@php.net">mailto:ssb@php.net</a>&gt;</td>
+  </tr>
+</table>
+</div>
+</div><br /><br />
+<div class="top">[ <a href="#top">Top</a> ]</div><br />
+
+<hr />
+<a name="class_vars"></a>
+<h3>Class Variables</h3>
+<div class="tags">
+	<a name="var$dbh"></a>
+	<p></p>
+	<h4>$dbh = <span class="value"></span></h4>
+	<p>[line <a href="..//__filesource/fsource_DB__frameworkDBcommon.php.html#a110">110</a>]</p>
+  DB handle<br /><br />
+  <br />
+	<div class="tags">
+  <table border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td><b>Type:</b>&nbsp;&nbsp;</td>
+      <td>resource</td>
+    </tr>
+      </table>
+	</div><br /><br />
+	<div class="top">[ <a href="#top">Top</a> ]</div><br />
+	<a name="var$errorcode_map"></a>
+	<p></p>
+	<h4>$errorcode_map = <span class="value"></span></h4>
+	<p>[line <a href="..//__filesource/fsource_DB__frameworkDBcommon.php.html#a49">49</a>]</p>
+  assoc mapping native error codes to DB ones<br /><br />
+  <br />
+	<div class="tags">
+  <table border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td><b>Type:</b>&nbsp;&nbsp;</td>
+      <td>array</td>
+    </tr>
+      </table>
+	</div><br /><br />
+	<div class="top">[ <a href="#top">Top</a> ]</div><br />
+	<a name="var$features"></a>
+	<p></p>
+	<h4>$features = <span class="value"></span></h4>
+	<p>[line <a href="..//__filesource/fsource_DB__frameworkDBcommon.php.html#a43">43</a>]</p>
+  assoc of capabilities for this DB implementation<br /><br /><p>$features['limit'] =&gt;  'emulate' =&gt; emulate with fetch row by number                         'alter'   =&gt; alter the query                         false     =&gt; skip rows</p><br />
+  <br />
+	<div class="tags">
+  <table border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td><b>Type:</b>&nbsp;&nbsp;</td>
+      <td>array</td>
+    </tr>
+      </table>
+	</div><br /><br />
+	<div class="top">[ <a href="#top">Top</a> ]</div><br />
+	<a name="var$fetchmode"></a>
+	<p></p>
+	<h4>$fetchmode = <span class="value">&nbsp;DB_FETCHMODE_ORDERED</span></h4>
+	<p>[line <a href="..//__filesource/fsource_DB__frameworkDBcommon.php.html#a85">85</a>]</p>
+  
+  <br />
+	<div class="tags">
+  <table border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td><b>Type:</b>&nbsp;&nbsp;</td>
+      <td>integer</td>
+    </tr>
+      </table>
+	</div><br /><br />
+	<div class="top">[ <a href="#top">Top</a> ]</div><br />
+	<a name="var$fetchmode_object_class"></a>
+	<p></p>
+	<h4>$fetchmode_object_class = <span class="value">&nbsp;'stdClass'</span></h4>
+	<p>[line <a href="..//__filesource/fsource_DB__frameworkDBcommon.php.html#a90">90</a>]</p>
+  
+  <br />
+	<div class="tags">
+  <table border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td><b>Type:</b>&nbsp;&nbsp;</td>
+      <td>string</td>
+    </tr>
+      </table>
+	</div><br /><br />
+	<div class="top">[ <a href="#top">Top</a> ]</div><br />
+	<a name="var$last_query"></a>
+	<p></p>
+	<h4>$last_query = <span class="value">&nbsp;''</span></h4>
+	<p>[line <a href="..//__filesource/fsource_DB__frameworkDBcommon.php.html#a80">80</a>]</p>
+  
+  <br />
+	<div class="tags">
+  <table border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td><b>Type:</b>&nbsp;&nbsp;</td>
+      <td>string</td>
+    </tr>
+      </table>
+	</div><br /><br />
+	<div class="top">[ <a href="#top">Top</a> ]</div><br />
+	<a name="var$options"></a>
+	<p></p>
+	<h4>$options = <span class="value">array(<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'persistent'&nbsp;=&gt;&nbsp;false,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'optimize'&nbsp;=&gt;&nbsp;'performance',<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'debug'&nbsp;=&gt;&nbsp;0,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'seqname_format'&nbsp;=&gt;&nbsp;'%s_seq',<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'autofree'&nbsp;=&gt;&nbsp;false<br>
+&nbsp;&nbsp;&nbsp;&nbsp;)</span></h4>
+	<p>[line <a href="..//__filesource/fsource_DB__frameworkDBcommon.php.html#a98">98</a>]</p>
+  $options[&quot;persistent&quot;] -&gt; boolean persistent connection true|false?<br /><br /><p>$options[&quot;optimize&quot;] -&gt; string 'performance' or 'portability'  $options[&quot;debug&quot;] -&gt; integer numeric debug level</p><br />
+  <br />
+	<div class="tags">
+  <table border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td><b>Type:</b>&nbsp;&nbsp;</td>
+      <td>array</td>
+    </tr>
+      </table>
+	</div><br /><br />
+	<div class="top">[ <a href="#top">Top</a> ]</div><br />
+	<a name="var$prepared_queries"></a>
+	<p></p>
+	<h4>$prepared_queries = <span class="value"></span></h4>
+	<p>[line <a href="..//__filesource/fsource_DB__frameworkDBcommon.php.html#a70">70</a>]</p>
+  
+  <br />
+	<div class="tags">
+  <table border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td><b>Type:</b>&nbsp;&nbsp;</td>
+      <td>string</td>
+    </tr>
+      </table>
+	</div><br /><br />
+	<div class="top">[ <a href="#top">Top</a> ]</div><br />
+	<a name="var$prepare_maxstmt"></a>
+	<p></p>
+	<h4>$prepare_maxstmt = <span class="value">&nbsp;0</span></h4>
+	<p>[line <a href="..//__filesource/fsource_DB__frameworkDBcommon.php.html#a75">75</a>]</p>
+  
+  <br />
+	<div class="tags">
+  <table border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td><b>Type:</b>&nbsp;&nbsp;</td>
+      <td>integer</td>
+    </tr>
+      </table>
+	</div><br /><br />
+	<div class="top">[ <a href="#top">Top</a> ]</div><br />
+	<a name="var$prepare_tokens"></a>
+	<p></p>
+	<h4>$prepare_tokens = <span class="value"></span></h4>
+	<p>[line <a href="..//__filesource/fsource_DB__frameworkDBcommon.php.html#a60">60</a>]</p>
+  
+  <br />
+	<div class="tags">
+  <table border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td><b>Type:</b>&nbsp;&nbsp;</td>
+      <td>string</td>
+    </tr>
+      </table>
+	</div><br /><br />
+	<div class="top">[ <a href="#top">Top</a> ]</div><br />
+	<a name="var$prepare_types"></a>
+	<p></p>
+	<h4>$prepare_types = <span class="value"></span></h4>
+	<p>[line <a href="..//__filesource/fsource_DB__frameworkDBcommon.php.html#a65">65</a>]</p>
+  
+  <br />
+	<div class="tags">
+  <table border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td><b>Type:</b>&nbsp;&nbsp;</td>
+      <td>string</td>
+    </tr>
+      </table>
+	</div><br /><br />
+	<div class="top">[ <a href="#top">Top</a> ]</div><br />
+	<a name="var$type"></a>
+	<p></p>
+	<h4>$type = <span class="value"></span></h4>
+	<p>[line <a href="..//__filesource/fsource_DB__frameworkDBcommon.php.html#a55">55</a>]</p>
+  DB type (mysql, oci8, odbc etc.)<br /><br />
+  <br />
+	<div class="tags">
+  <table border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td><b>Type:</b>&nbsp;&nbsp;</td>
+      <td>string</td>
+    </tr>
+      </table>
+	</div><br /><br />
+	<div class="top">[ <a href="#top">Top</a> ]</div><br />
+</div><br />
+
+<hr />
+<a name="class_methods"></a>
+<h3>Class Methods</h3>
+<div class="tags">
+  <hr />
+	<a name="methodDB_common"></a>
+	<h3>constructor DB_common <span class="smalllinenumber">[line <a href="..//__filesource/fsource_DB__frameworkDBcommon.php.html#a139">139</a>]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>DB_common DB_common(
+)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Constructor<br /><br /><br /><br />
+
+
+
+
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodaffectedRows"></a>
+	<h3>method affectedRows <span class="smalllinenumber">[line <a href="..//__filesource/fsource_DB__frameworkDBcommon.php.html#a1254">1254</a>]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>mixed affectedRows(
+)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		returns the affected rows of a query<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>return:</b>&nbsp;&nbsp;</td><td>DB_Error or number of rows</td>
+  </tr>
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	<p>Overridden in child classes as:<br />
+		<dl>
+	<dt><a href="../DB/DB_fbsql.html#methodaffectedRows">DB_fbsql::affectedRows()</a></dt>
+		<dd>Gets the number of rows affected by the data manipulation  query.  For other queries, this function returns 0.</dd>
+	</dl>
+		<dl>
+	<dt><a href="../DB/DB_ifx.html#methodaffectedRows">DB_ifx::affectedRows()</a></dt>
+		<dd>Gets the number of rows affected by the last query.</dd>
+	</dl>
+		<dl>
+	<dt><a href="../DB/DB_msql.html#methodaffectedRows">DB_msql::affectedRows()</a></dt>
+		<dd>Gets the number of rows affected by a query.</dd>
+	</dl>
+		<dl>
+	<dt><a href="../DB/DB_mssql.html#methodaffectedRows">DB_mssql::affectedRows()</a></dt>
+		<dd>Gets the number of rows affected by the last query.</dd>
+	</dl>
+		<dl>
+	<dt><a href="../DB/DB_mysql.html#methodaffectedRows">DB_mysql::affectedRows()</a></dt>
+		<dd>Gets the number of rows affected by the data manipulation  query.  For other queries, this function returns 0.</dd>
+	</dl>
+		<dl>
+	<dt><a href="../DB/DB_oci8.html#methodaffectedRows">DB_oci8::affectedRows()</a></dt>
+		<dd>Gets the number of rows affected by the last query.</dd>
+	</dl>
+		<dl>
+	<dt><a href="../DB/DB_odbc.html#methodaffectedRows">DB_odbc::affectedRows()</a></dt>
+		<dd>Returns the number of rows affected by a manipulative query</dd>
+	</dl>
+		<dl>
+	<dt><a href="../DB/DB_pgsql.html#methodaffectedRows">DB_pgsql::affectedRows()</a></dt>
+		<dd>Gets the number of rows affected by the last query.</dd>
+	</dl>
+		<dl>
+	<dt><a href="../DB/DB_sqlite.html#methodaffectedRows">DB_sqlite::affectedRows()</a></dt>
+		<dd>Gets the number of rows affected by a query.</dd>
+	</dl>
+		<dl>
+	<dt><a href="../DB/DB_sybase.html#methodaffectedRows">DB_sybase::affectedRows()</a></dt>
+		<dd>Gets the number of rows affected by the data manipulation  query.  For other queries, this function returns 0.</dd>
+	</dl>
+	</p>
+
+
+
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodautoCommit"></a>
+	<h3>method autoCommit <span class="smalllinenumber">[line <a href="..//__filesource/fsource_DB__frameworkDBcommon.php.html#a1196">1196</a>]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>mixed autoCommit(
+[boolean
+$onoff = false])</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		enable automatic Commit<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>return:</b>&nbsp;&nbsp;</td><td>DB_Error</td>
+  </tr>
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	<p>Overridden in child classes as:<br />
+		<dl>
+	<dt><a href="../DB/DB_fbsql.html#methodautoCommit">DB_fbsql::autoCommit()</a></dt>
+		<dd></dd>
+	</dl>
+		<dl>
+	<dt><a href="../DB/DB_ibase.html#methodautoCommit">DB_ibase::autoCommit()</a></dt>
+		<dd></dd>
+	</dl>
+		<dl>
+	<dt><a href="../DB/DB_mssql.html#methodautoCommit">DB_mssql::autoCommit()</a></dt>
+		<dd>Enable/disable automatic commits</dd>
+	</dl>
+		<dl>
+	<dt><a href="../DB/DB_mysql.html#methodautoCommit">DB_mysql::autoCommit()</a></dt>
+		<dd>Enable/disable automatic commits</dd>
+	</dl>
+		<dl>
+	<dt><a href="../DB/DB_oci8.html#methodautoCommit">DB_oci8::autoCommit()</a></dt>
+		<dd>Enable/disable automatic commits</dd>
+	</dl>
+		<dl>
+	<dt><a href="../DB/DB_odbc.html#methodautoCommit">DB_odbc::autoCommit()</a></dt>
+		<dd></dd>
+	</dl>
+		<dl>
+	<dt><a href="../DB/DB_pgsql.html#methodautoCommit">DB_pgsql::autoCommit()</a></dt>
+		<dd>Enable/disable automatic commits</dd>
+	</dl>
+	</p>
+
+
+
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">boolean&nbsp;&nbsp;</td>
+        <td><b>$onoff</b>&nbsp;&nbsp;</td>
+        <td></td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodautoExecute"></a>
+	<h3>method autoExecute <span class="smalllinenumber">[line <a href="..//__filesource/fsource_DB__frameworkDBcommon.php.html#a470">470</a>]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>mixed autoExecute(
+string
+$table, array
+$fields_values, [int
+$mode = DB_AUTOQUERY_INSERT], [string
+$where = false])</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Make automaticaly an insert or update query and call prepare() and execute() with it<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>return:</b>&nbsp;&nbsp;</td><td>a new DB_Result or a DB_Error when fail</td>
+  </tr>
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+  <tr>
+    <td><b>see:</b>&nbsp;&nbsp;</td><td><a href="../DB/DB_common.html#methodautoPrepare">DB_common::autoPrepare()</a></td>
+  </tr>
+  <tr>
+    <td><b>see:</b>&nbsp;&nbsp;</td><td><a href="../DB/DB_common.html#methodbuildManipSQL">DB_common::buildManipSQL()</a></td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+
+
+
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$table</b>&nbsp;&nbsp;</td>
+        <td>name of the table</td>
+      </tr>
+          <tr>
+        <td class="type">array&nbsp;&nbsp;</td>
+        <td><b>$fields_values</b>&nbsp;&nbsp;</td>
+        <td>assoc ($key=&gt;$value) where $key is a field name and $value its value</td>
+      </tr>
+          <tr>
+        <td class="type">int&nbsp;&nbsp;</td>
+        <td><b>$mode</b>&nbsp;&nbsp;</td>
+        <td>type of query to make (DB_AUTOQUERY_INSERT or DB_AUTOQUERY_UPDATE)</td>
+      </tr>
+          <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$where</b>&nbsp;&nbsp;</td>
+        <td>in case of update queries, this string will be put after the sql WHERE statement</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodautoPrepare"></a>
+	<h3>method autoPrepare <span class="smalllinenumber">[line <a href="..//__filesource/fsource_DB__frameworkDBcommon.php.html#a449">449</a>]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>resource autoPrepare(
+string
+$table, array
+$table_fields, [int
+$mode = DB_AUTOQUERY_INSERT], [string
+$where = false])</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Make automaticaly an insert or update query and call prepare() with it<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>return:</b>&nbsp;&nbsp;</td><td>handle for the query</td>
+  </tr>
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+  <tr>
+    <td><b>see:</b>&nbsp;&nbsp;</td><td><a href="../DB/DB_common.html#methodbuildManipSQL">DB_common::buildManipSQL()</a></td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+
+
+
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$table</b>&nbsp;&nbsp;</td>
+        <td>name of the table</td>
+      </tr>
+          <tr>
+        <td class="type">array&nbsp;&nbsp;</td>
+        <td><b>$table_fields</b>&nbsp;&nbsp;</td>
+        <td>ordered array containing the fields names</td>
+      </tr>
+          <tr>
+        <td class="type">int&nbsp;&nbsp;</td>
+        <td><b>$mode</b>&nbsp;&nbsp;</td>
+        <td>type of query to make (DB_AUTOQUERY_INSERT or DB_AUTOQUERY_UPDATE)</td>
+      </tr>
+          <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$where</b>&nbsp;&nbsp;</td>
+        <td>in case of update queries, this string will be put after the sql WHERE statement</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodbuildManipSQL"></a>
+	<h3>method buildManipSQL <span class="smalllinenumber">[line <a href="..//__filesource/fsource_DB__frameworkDBcommon.php.html#a498">498</a>]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>string buildManipSQL(
+string
+$table, array
+$table_fields, int
+$mode, [string
+$where = false])</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Make automaticaly an sql query for prepare()<br /><br /><p>Example : buildManipSQL('table_sql', array('field1', 'field2', 'field3'), DB_AUTOQUERY_INSERT)            will return the string : INSERT INTO table_sql (field1,field2,field3) VALUES (?,?,?)  NB : - This belongs more to a SQL Builder class, but this is a simple facility <ul><li>Be carefull ! If you don't give a $where param with an UPDATE query, all
+        the records of the table will be updated !</li></ul></p><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>return:</b>&nbsp;&nbsp;</td><td>sql query for prepare()</td>
+  </tr>
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+
+
+
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$table</b>&nbsp;&nbsp;</td>
+        <td>name of the table</td>
+      </tr>
+          <tr>
+        <td class="type">array&nbsp;&nbsp;</td>
+        <td><b>$table_fields</b>&nbsp;&nbsp;</td>
+        <td>ordered array containing the fields names</td>
+      </tr>
+          <tr>
+        <td class="type">int&nbsp;&nbsp;</td>
+        <td><b>$mode</b>&nbsp;&nbsp;</td>
+        <td>type of query to make (DB_AUTOQUERY_INSERT or DB_AUTOQUERY_UPDATE)</td>
+      </tr>
+          <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$where</b>&nbsp;&nbsp;</td>
+        <td>in case of update queries, this string will be put after the sql WHERE statement</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodcommit"></a>
+	<h3>method commit <span class="smalllinenumber">[line <a href="..//__filesource/fsource_DB__frameworkDBcommon.php.html#a1210">1210</a>]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>mixed commit(
+)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		starts a Commit<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>return:</b>&nbsp;&nbsp;</td><td>DB_Error</td>
+  </tr>
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	<p>Overridden in child classes as:<br />
+		<dl>
+	<dt><a href="../DB/DB_fbsql.html#methodcommit">DB_fbsql::commit()</a></dt>
+		<dd></dd>
+	</dl>
+		<dl>
+	<dt><a href="../DB/DB_ibase.html#methodcommit">DB_ibase::commit()</a></dt>
+		<dd></dd>
+	</dl>
+		<dl>
+	<dt><a href="../DB/DB_mssql.html#methodcommit">DB_mssql::commit()</a></dt>
+		<dd>Commit the current transaction.</dd>
+	</dl>
+		<dl>
+	<dt><a href="../DB/DB_mysql.html#methodcommit">DB_mysql::commit()</a></dt>
+		<dd>Commit the current transaction.</dd>
+	</dl>
+		<dl>
+	<dt><a href="../DB/DB_oci8.html#methodcommit">DB_oci8::commit()</a></dt>
+		<dd>Commit transactions on the current connection</dd>
+	</dl>
+		<dl>
+	<dt><a href="../DB/DB_odbc.html#methodcommit">DB_odbc::commit()</a></dt>
+		<dd></dd>
+	</dl>
+		<dl>
+	<dt><a href="../DB/DB_pgsql.html#methodcommit">DB_pgsql::commit()</a></dt>
+		<dd>Commit the current transaction.</dd>
+	</dl>
+	</p>
+
+
+
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodcreateSequence"></a>
+	<h3>method createSequence <span class="smalllinenumber">[line <a href="..//__filesource/fsource_DB__frameworkDBcommon.php.html#a1301">1301</a>]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>mixed createSequence(
+string
+$seq_name)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		creates a new sequence<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>return:</b>&nbsp;&nbsp;</td><td>DB_Error</td>
+  </tr>
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	<p>Overridden in child classes as:<br />
+		<dl>
+	<dt><a href="../DB/DB_fbsql.html#methodcreateSequence">DB_fbsql::createSequence()</a></dt>
+		<dd></dd>
+	</dl>
+		<dl>
+	<dt><a href="../DB/DB_ibase.html#methodcreateSequence">DB_ibase::createSequence()</a></dt>
+		<dd>Create the sequence</dd>
+	</dl>
+		<dl>
+	<dt><a href="../DB/DB_mssql.html#methodcreateSequence">DB_mssql::createSequence()</a></dt>
+		<dd></dd>
+	</dl>
+		<dl>
+	<dt><a href="../DB/DB_mysql.html#methodcreateSequence">DB_mysql::createSequence()</a></dt>
+		<dd></dd>
+	</dl>
+		<dl>
+	<dt><a href="../DB/DB_oci8.html#methodcreateSequence">DB_oci8::createSequence()</a></dt>
+		<dd></dd>
+	</dl>
+		<dl>
+	<dt><a href="../DB/DB_odbc.html#methodcreateSequence">DB_odbc::createSequence()</a></dt>
+		<dd></dd>
+	</dl>
+		<dl>
+	<dt><a href="../DB/DB_pgsql.html#methodcreateSequence">DB_pgsql::createSequence()</a></dt>
+		<dd>Create the sequence</dd>
+	</dl>
+	</p>
+
+
+
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$seq_name</b>&nbsp;&nbsp;</td>
+        <td>name of the new sequence</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methoddropSequence"></a>
+	<h3>method dropSequence <span class="smalllinenumber">[line <a href="..//__filesource/fsource_DB__frameworkDBcommon.php.html#a1317">1317</a>]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>mixed dropSequence(
+string
+$seq_name)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		deletes a sequence<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>return:</b>&nbsp;&nbsp;</td><td>DB_Error</td>
+  </tr>
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	<p>Overridden in child classes as:<br />
+		<dl>
+	<dt><a href="../DB/DB_fbsql.html#methoddropSequence">DB_fbsql::dropSequence()</a></dt>
+		<dd></dd>
+	</dl>
+		<dl>
+	<dt><a href="../DB/DB_ibase.html#methoddropSequence">DB_ibase::dropSequence()</a></dt>
+		<dd>Drop a sequence</dd>
+	</dl>
+		<dl>
+	<dt><a href="../DB/DB_mssql.html#methoddropSequence">DB_mssql::dropSequence()</a></dt>
+		<dd></dd>
+	</dl>
+		<dl>
+	<dt><a href="../DB/DB_mysql.html#methoddropSequence">DB_mysql::dropSequence()</a></dt>
+		<dd></dd>
+	</dl>
+		<dl>
+	<dt><a href="../DB/DB_oci8.html#methoddropSequence">DB_oci8::dropSequence()</a></dt>
+		<dd></dd>
+	</dl>
+		<dl>
+	<dt><a href="../DB/DB_odbc.html#methoddropSequence">DB_odbc::dropSequence()</a></dt>
+		<dd></dd>
+	</dl>
+		<dl>
+	<dt><a href="../DB/DB_pgsql.html#methoddropSequence">DB_pgsql::dropSequence()</a></dt>
+		<dd>Drop a sequence</dd>
+	</dl>
+	</p>
+
+
+
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$seq_name</b>&nbsp;&nbsp;</td>
+        <td>name of the sequence</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methoderrorCode"></a>
+	<h3>method errorCode <span class="smalllinenumber">[line <a href="..//__filesource/fsource_DB__frameworkDBcommon.php.html#a216">216</a>]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>int errorCode(
+mixed
+$nativecode)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Map native error codes to DB's portable ones.  Requires that  the DB implementation's constructor fills in the $errorcode_map  property.<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>return:</b>&nbsp;&nbsp;</td><td>a portable DB error code, or FALSE if this DB  implementation has no mapping for the given error code.</td>
+  </tr>
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	<p>Overridden in child classes as:<br />
+		<dl>
+	<dt><a href="../DB/DB_ifx.html#methoderrorCode">DB_ifx::errorCode()</a></dt>
+		<dd>Map native error codes to DB's portable ones.  Requires that  the DB implementation's constructor fills in the $errorcode_map  property.</dd>
+	</dl>
+		<dl>
+	<dt><a href="../DB/DB_mssql.html#methoderrorCode">DB_mssql::errorCode()</a></dt>
+		<dd></dd>
+	</dl>
+		<dl>
+	<dt><a href="../DB/DB_pgsql.html#methoderrorCode">DB_pgsql::errorCode()</a></dt>
+		<dd>Map native error codes to DB's portable ones.  Requires that  the DB implementation's constructor fills in the $errorcode_map  property.</dd>
+	</dl>
+		<dl>
+	<dt><a href="../DB/DB_sybase.html#methoderrorCode">DB_sybase::errorCode()</a></dt>
+		<dd></dd>
+	</dl>
+	</p>
+
+
+
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">mixed&nbsp;&nbsp;</td>
+        <td><b>$nativecode</b>&nbsp;&nbsp;</td>
+        <td>the native error code, as returned by the backend  database extension (string or integer)</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methoderrorMessage"></a>
+	<h3>method errorMessage <span class="smalllinenumber">[line <a href="..//__filesource/fsource_DB__frameworkDBcommon.php.html#a240">240</a>]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>string errorMessage(
+integer
+$dbcode)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Map a DB error code to a textual message.  This is actually  just a wrapper for DB::errorMessage().<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>return:</b>&nbsp;&nbsp;</td><td>the corresponding error message, of FALSE  if the error code was unknown</td>
+  </tr>
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+
+
+
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">integer&nbsp;&nbsp;</td>
+        <td><b>$dbcode</b>&nbsp;&nbsp;</td>
+        <td>the DB error code</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methoderrorNative"></a>
+	<h3>method errorNative <span class="smalllinenumber">[line <a href="..//__filesource/fsource_DB__frameworkDBcommon.php.html#a1268">1268</a>]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>mixed errorNative(
+)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		returns an errormessage, provides by the database<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>return:</b>&nbsp;&nbsp;</td><td>DB_Error or message</td>
+  </tr>
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	<p>Overridden in child classes as:<br />
+		<dl>
+	<dt><a href="../DB/DB_fbsql.html#methoderrorNative">DB_fbsql::errorNative()</a></dt>
+		<dd>Get the native error code of the last error (if any) that  occured on the current connection.</dd>
+	</dl>
+		<dl>
+	<dt><a href="../DB/DB_ifx.html#methoderrorNative">DB_ifx::errorNative()</a></dt>
+		<dd>Get the native error message of the last error (if any) that  occured on the current connection.</dd>
+	</dl>
+		<dl>
+	<dt><a href="../DB/DB_mysql.html#methoderrorNative">DB_mysql::errorNative()</a></dt>
+		<dd>Get the native error code of the last error (if any) that  occured on the current connection.</dd>
+	</dl>
+		<dl>
+	<dt><a href="../DB/DB_oci8.html#methoderrorNative">DB_oci8::errorNative()</a></dt>
+		<dd>Get the native error code of the last error (if any) that occured  on the current connection.  This does not work, as OCIError does  not work unless given a statement.  If OCIError does return  something, so will this.</dd>
+	</dl>
+		<dl>
+	<dt><a href="../DB/DB_odbc.html#methoderrorNative">DB_odbc::errorNative()</a></dt>
+		<dd>Get the native error code of the last error (if any) that  occured on the current connection.</dd>
+	</dl>
+		<dl>
+	<dt><a href="../DB/DB_pgsql.html#methoderrorNative">DB_pgsql::errorNative()</a></dt>
+		<dd>Get the native error code of the last error (if any) that  occured on the current connection.</dd>
+	</dl>
+		<dl>
+	<dt><a href="../DB/DB_sybase.html#methoderrorNative">DB_sybase::errorNative()</a></dt>
+		<dd>Get the last server error messge (if any)</dd>
+	</dl>
+	</p>
+
+
+
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodexecute"></a>
+	<h3>method execute <span class="smalllinenumber">[line <a href="..//__filesource/fsource_DB__frameworkDBcommon.php.html#a559">559</a>]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>mixed &amp;execute(
+resource
+$stmt, [array
+$data = false])</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Executes a prepared SQL query<br /><br /><p>With execute() the generic query of prepare is  assigned with the given data array. The values  of the array inserted into the query in the same  order like the array order</p><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>return:</b>&nbsp;&nbsp;</td><td>a new DB_Result or a DB_Error when fail</td>
+  </tr>
+  <tr>
+    <td><b>see:</b>&nbsp;&nbsp;</td><td><a href="../DB/DB_common.html#methodprepare">DB_common::prepare()</a></td>
+  </tr>
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	<p>Overridden in child classes as:<br />
+		<dl>
+	<dt><a href="../DB/DB_ibase.html#methodexecute">DB_ibase::execute()</a></dt>
+		<dd>Executes a DB statement prepared with prepare().</dd>
+	</dl>
+		<dl>
+	<dt><a href="../DB/DB_oci8.html#methodexecute">DB_oci8::execute()</a></dt>
+		<dd>Executes a DB statement prepared with prepare().</dd>
+	</dl>
+	</p>
+
+
+
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">resource&nbsp;&nbsp;</td>
+        <td><b>$stmt</b>&nbsp;&nbsp;</td>
+        <td>query handle from prepare()</td>
+      </tr>
+          <tr>
+        <td class="type">array&nbsp;&nbsp;</td>
+        <td><b>$data</b>&nbsp;&nbsp;</td>
+        <td>numeric array containing the                        data to insert into the query</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodexecuteEmulateQuery"></a>
+	<h3>method executeEmulateQuery <span class="smalllinenumber">[line <a href="..//__filesource/fsource_DB__frameworkDBcommon.php.html#a591">591</a>]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>mixed executeEmulateQuery(
+resource
+$stmt, [array
+$data = false])</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Emulates the execute statement, when not supported<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>return:</b>&nbsp;&nbsp;</td><td>a string containing the real query run when emulating  prepare/execute.  A DB error code is returned on failure.</td>
+  </tr>
+  <tr>
+    <td><b>see:</b>&nbsp;&nbsp;</td><td><a href="../DB/DB_common.html#methodexecute">DB_common::execute()</a></td>
+  </tr>
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>private</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+
+
+
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">resource&nbsp;&nbsp;</td>
+        <td><b>$stmt</b>&nbsp;&nbsp;</td>
+        <td>query handle from prepare()</td>
+      </tr>
+          <tr>
+        <td class="type">array&nbsp;&nbsp;</td>
+        <td><b>$data</b>&nbsp;&nbsp;</td>
+        <td>numeric array containing the                        data to insert into the query</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodexecuteMultiple"></a>
+	<h3>method executeMultiple <span class="smalllinenumber">[line <a href="..//__filesource/fsource_DB__frameworkDBcommon.php.html#a667">667</a>]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>mixed executeMultiple(
+resource
+$stmt, array
+&$data)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		This function does several execute() calls on the same  statement handle.  $data must be an array indexed numerically  from 0, one execute call is done for every &quot;row&quot; in the array.<br /><br /><p>If an error occurs during execute(), executeMultiple() does not  execute the unfinished rows, but rather returns that error.</p><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>return:</b>&nbsp;&nbsp;</td><td>DB_OK or DB_Error</td>
+  </tr>
+  <tr>
+    <td><b>see:</b>&nbsp;&nbsp;</td><td><a href="../DB/DB_common.html#methodprepare">DB_common::prepare()</a>, <a href="../DB/DB_common.html#methodexecute">DB_common::execute()</a></td>
+  </tr>
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+
+
+
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">resource&nbsp;&nbsp;</td>
+        <td><b>$stmt</b>&nbsp;&nbsp;</td>
+        <td>query handle from prepare()</td>
+      </tr>
+          <tr>
+        <td class="type">array&nbsp;&nbsp;</td>
+        <td><b>$data</b>&nbsp;&nbsp;</td>
+        <td>numeric array containing the                        data to insert into the query</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodfreePrepared"></a>
+	<h3>method freePrepared <span class="smalllinenumber">[line <a href="..//__filesource/fsource_DB__frameworkDBcommon.php.html#a687">687</a>]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>void freePrepared(
+mixed
+$stmt)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		<br /><br />
+
+	<p>Overridden in child classes as:<br />
+		<dl>
+	<dt><a href="../DB/DB_ibase.html#methodfreePrepared">DB_ibase::freePrepared()</a></dt>
+		<dd>Free the internal resources associated with a prepared query.</dd>
+	</dl>
+		<dl>
+	<dt><a href="../DB/DB_oci8.html#methodfreePrepared">DB_oci8::freePrepared()</a></dt>
+		<dd>Free the internal resources associated with a prepared query.</dd>
+	</dl>
+	</p>
+
+
+
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodgetAll"></a>
+	<h3>method getAll <span class="smalllinenumber">[line <a href="..//__filesource/fsource_DB__frameworkDBcommon.php.html#a1131">1131</a>]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>array &amp;getAll(
+string
+$query, [array
+$params = null], [integer
+$fetchmode = DB_FETCHMODE_DEFAULT])</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Fetch all the rows returned from a query.<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>return:</b>&nbsp;&nbsp;</td><td>an nested array, or a DB error</td>
+  </tr>
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+
+
+
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$query</b>&nbsp;&nbsp;</td>
+        <td>the SQL query</td>
+      </tr>
+          <tr>
+        <td class="type">array&nbsp;&nbsp;</td>
+        <td><b>$params</b>&nbsp;&nbsp;</td>
+        <td>array if supplied, prepare/execute will be used         with this array as execute parameters</td>
+      </tr>
+          <tr>
+        <td class="type">integer&nbsp;&nbsp;</td>
+        <td><b>$fetchmode</b>&nbsp;&nbsp;</td>
+        <td>the fetch mode to use</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodgetAssoc"></a>
+	<h3>method getAssoc <span class="smalllinenumber">[line <a href="..//__filesource/fsource_DB__frameworkDBcommon.php.html#a1038">1038</a>]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>array &amp;getAssoc(
+string
+$query, [boolean
+$force_array = false], [array
+$params = array()], [mixed
+$fetchmode = DB_FETCHMODE_ORDERED], [boolean
+$group = false])</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Fetch the entire result set of a query and return it as an  associative array using the first column as the key.<br /><br /><p>If the result set contains more than two columns, the value  will be an array of the values from column 2-n.  If the result  set contains only two columns, the returned value will be a  scalar with the value of the second column (unless forced to an  array with the $force_array parameter).  A DB error code is  returned on errors.  If the result set contains fewer than two  columns, a DB_ERROR_TRUNCATED error is returned.</p><p>For example, if the table &quot;mytable&quot; contains:</p><p>ID      TEXT       DATE  -------------------------------- <ol><li>'one'      944679408</li><li>'two'      944679408</li><li>'three'    944679408</li></ol>  Then the call getAssoc('SELECT id,text FROM mytable') returns:    array(      '1' =&gt; 'one',      '2' =&gt; 'two',      '3' =&gt; 'three',    )</p><p>...while the call getAssoc('SELECT id,text,date FROM mytable') returns:    array(      '1' =&gt; array('one', '944679408'),      '2' =&gt; array('two', '944679408'),      '3' =&gt; array('three', '944679408')    )</p><p>If the more than one row occurs with the same value in the  first column, the last row overwrites all previous ones by  default.  Use the $group parameter if you don't want to  overwrite like this.  Example:</p><p>getAssoc('SELECT category,id,name FROM mytable', false, null,           DB_FETCHMODE_ASSOC, true) returns:    array(      '1' =&gt; array(array('id' =&gt; '4', 'name' =&gt; 'number four'),                   array('id' =&gt; '6', 'name' =&gt; 'number six')             ),      '9' =&gt; array(array('id' =&gt; '4', 'name' =&gt; 'number four'),                   array('id' =&gt; '6', 'name' =&gt; 'number six')             )    )</p><p>Keep in mind that database functions in PHP usually return string  values for results regardless of the database's internal type.</p><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>return:</b>&nbsp;&nbsp;</td><td>associative array with results from the query.</td>
+  </tr>
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+
+
+
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$query</b>&nbsp;&nbsp;</td>
+        <td>the SQL query</td>
+      </tr>
+          <tr>
+        <td class="type">boolean&nbsp;&nbsp;</td>
+        <td><b>$force_array</b>&nbsp;&nbsp;</td>
+        <td>used only when the query returns  exactly two columns.  If true, the values of the returned array  will be one-element arrays instead of scalars.</td>
+      </tr>
+          <tr>
+        <td class="type">array&nbsp;&nbsp;</td>
+        <td><b>$params</b>&nbsp;&nbsp;</td>
+        <td>array if supplied, prepare/execute will be used         with this array as execute parameters</td>
+      </tr>
+          <tr>
+        <td class="type">boolean&nbsp;&nbsp;</td>
+        <td><b>$group</b>&nbsp;&nbsp;</td>
+        <td>if true, the values of the returned array                        is wrapped in another array.  If the same                        key value (in the first column) repeats                        itself, the values will be appended to                        this array instead of overwriting the                        existing values.</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodgetCol"></a>
+	<h3>method getCol <span class="smalllinenumber">[line <a href="..//__filesource/fsource_DB__frameworkDBcommon.php.html#a925">925</a>]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>array &amp;getCol(
+string
+$query, [mixed
+$col = 0], [array
+$params = array()])</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Fetch a single column from a result set and return it as an  indexed array.<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>return:</b>&nbsp;&nbsp;</td><td>an indexed array with the data from the first  row at index 0, or a DB error code.</td>
+  </tr>
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+
+
+
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$query</b>&nbsp;&nbsp;</td>
+        <td>the SQL query</td>
+      </tr>
+          <tr>
+        <td class="type">mixed&nbsp;&nbsp;</td>
+        <td><b>$col</b>&nbsp;&nbsp;</td>
+        <td>which column to return (integer [column number,  starting at 0] or string [column name])</td>
+      </tr>
+          <tr>
+        <td class="type">array&nbsp;&nbsp;</td>
+        <td><b>$params</b>&nbsp;&nbsp;</td>
+        <td>array if supplied, prepare/execute will be used         with this array as execute parameters</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodgetListOf"></a>
+	<h3>method getListOf <span class="smalllinenumber">[line <a href="..//__filesource/fsource_DB__frameworkDBcommon.php.html#a1362">1362</a>]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>mixed getListOf(
+string
+$type)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		list internal DB info  valid values for $type are db dependent,  often: databases, users, view, functions<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>return:</b>&nbsp;&nbsp;</td><td>DB_Error or the requested data</td>
+  </tr>
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+
+
+
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$type</b>&nbsp;&nbsp;</td>
+        <td>type of requested info</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodgetOne"></a>
+	<h3>method getOne <span class="smalllinenumber">[line <a href="..//__filesource/fsource_DB__frameworkDBcommon.php.html#a815">815</a>]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>mixed &amp;getOne(
+string
+$query, [array
+$params = array()])</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Fetch the first column of the first row of data returned from  a query.  Takes care of doing the query and freeing the results  when finished.<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>return:</b>&nbsp;&nbsp;</td><td>DB_Error or the returned value of the query</td>
+  </tr>
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+
+
+
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$query</b>&nbsp;&nbsp;</td>
+        <td>the SQL query</td>
+      </tr>
+          <tr>
+        <td class="type">array&nbsp;&nbsp;</td>
+        <td><b>$params</b>&nbsp;&nbsp;</td>
+        <td>if supplied, prepare/execute will be used         with this array as execute parameters</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodgetOption"></a>
+	<h3>method getOption <span class="smalllinenumber">[line <a href="..//__filesource/fsource_DB__frameworkDBcommon.php.html#a374">374</a>]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>mixed getOption(
+string
+$option)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		returns the value of an option<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>return:</b>&nbsp;&nbsp;</td><td>the option value</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+
+
+
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$option</b>&nbsp;&nbsp;</td>
+        <td>option name</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodgetRow"></a>
+	<h3>method getRow <span class="smalllinenumber">[line <a href="..//__filesource/fsource_DB__frameworkDBcommon.php.html#a860">860</a>]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>array &amp;getRow(
+string
+$query, [array
+$params = null], [integer
+$fetchmode = DB_FETCHMODE_DEFAULT])</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Fetch the first row of data returned from a query.  Takes care  of doing the query and freeing the results when finished.<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>return:</b>&nbsp;&nbsp;</td><td>the first row of results as an array indexed from  0, or a DB error code.</td>
+  </tr>
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+
+
+
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$query</b>&nbsp;&nbsp;</td>
+        <td>the SQL query</td>
+      </tr>
+          <tr>
+        <td class="type">integer&nbsp;&nbsp;</td>
+        <td><b>$fetchmode</b>&nbsp;&nbsp;</td>
+        <td>the fetch mode to use</td>
+      </tr>
+          <tr>
+        <td class="type">array&nbsp;&nbsp;</td>
+        <td><b>$params</b>&nbsp;&nbsp;</td>
+        <td>array if supplied, prepare/execute will be used         with this array as execute parameters</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodgetSequenceName"></a>
+	<h3>method getSequenceName <span class="smalllinenumber">[line <a href="..//__filesource/fsource_DB__frameworkDBcommon.php.html#a1377">1377</a>]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>void getSequenceName(
+mixed
+$sqn)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		<br /><br />
+
+
+
+
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodgetTables"></a>
+	<h3>method getTables <span class="smalllinenumber">[line <a href="..//__filesource/fsource_DB__frameworkDBcommon.php.html#a1344">1344</a>]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>void getTables(
+)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		<br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>deprecated:</b>&nbsp;&nbsp;</td><td></td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+
+
+
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodlimitQuery"></a>
+	<h3>method limitQuery <span class="smalllinenumber">[line <a href="..//__filesource/fsource_DB__frameworkDBcommon.php.html#a787">787</a>]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>mixed &amp;limitQuery(
+string
+$query, integer
+$from, integer
+$count, [array
+$params = array()])</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Generates a limited query<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>return:</b>&nbsp;&nbsp;</td><td>a DB_Result object, DB_OK or a DB_Error</td>
+  </tr>
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+
+
+
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$query</b>&nbsp;&nbsp;</td>
+        <td>query</td>
+      </tr>
+          <tr>
+        <td class="type">integer&nbsp;&nbsp;</td>
+        <td><b>$from</b>&nbsp;&nbsp;</td>
+        <td>the row to start to fetching</td>
+      </tr>
+          <tr>
+        <td class="type">integer&nbsp;&nbsp;</td>
+        <td><b>$count</b>&nbsp;&nbsp;</td>
+        <td>the numbers of rows to fetch</td>
+      </tr>
+          <tr>
+        <td class="type">array&nbsp;&nbsp;</td>
+        <td><b>$params</b>&nbsp;&nbsp;</td>
+        <td>required for a statement</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodmodifyLimitQuery"></a>
+	<h3>method modifyLimitQuery <span class="smalllinenumber">[line <a href="..//__filesource/fsource_DB__frameworkDBcommon.php.html#a731">731</a>]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>the modifyLimitQuery(
+string
+$query, integer
+$from, integer
+$count)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		This method is used by backends to alter limited queries<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>return:</b>&nbsp;&nbsp;</td><td>new (modified) query</td>
+  </tr>
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>private</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	<p>Overridden in child classes as:<br />
+		<dl>
+	<dt><a href="../DB/DB_ibase.html#methodmodifyLimitQuery">DB_ibase::modifyLimitQuery()</a></dt>
+		<dd>This method is used by backends to alter limited queries  Uses the new FIRST n SKIP n Firebird 1.0 syntax, so it is  only compatible with Firebird 1.x</dd>
+	</dl>
+		<dl>
+	<dt><a href="../DB/DB_mysql.html#methodmodifyLimitQuery">DB_mysql::modifyLimitQuery()</a></dt>
+		<dd></dd>
+	</dl>
+		<dl>
+	<dt><a href="../DB/DB_oci8.html#methodmodifyLimitQuery">DB_oci8::modifyLimitQuery()</a></dt>
+		<dd>Emulate the row limit support altering the query</dd>
+	</dl>
+		<dl>
+	<dt><a href="../DB/DB_pgsql.html#methodmodifyLimitQuery">DB_pgsql::modifyLimitQuery()</a></dt>
+		<dd></dd>
+	</dl>
+	</p>
+
+
+
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$query</b>&nbsp;&nbsp;</td>
+        <td>query to modify</td>
+      </tr>
+          <tr>
+        <td class="type">integer&nbsp;&nbsp;</td>
+        <td><b>$from</b>&nbsp;&nbsp;</td>
+        <td>the row to start to fetching</td>
+      </tr>
+          <tr>
+        <td class="type">integer&nbsp;&nbsp;</td>
+        <td><b>$count</b>&nbsp;&nbsp;</td>
+        <td>the numbers of rows to fetch</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodmodifyQuery"></a>
+	<h3>method modifyQuery <span class="smalllinenumber">[line <a href="..//__filesource/fsource_DB__frameworkDBcommon.php.html#a713">713</a>]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>the modifyQuery(
+string
+$query)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		This method is used by backends to alter queries for various  reasons.  It is defined here to assure that all implementations  have this method defined.<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>return:</b>&nbsp;&nbsp;</td><td>new (modified) query</td>
+  </tr>
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>private</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	<p>Overridden in child classes as:<br />
+		<dl>
+	<dt><a href="../DB/DB_fbsql.html#methodmodifyQuery">DB_fbsql::modifyQuery()</a></dt>
+		<dd></dd>
+	</dl>
+		<dl>
+	<dt><a href="../DB/DB_mysql.html#methodmodifyQuery">DB_mysql::modifyQuery()</a></dt>
+		<dd></dd>
+	</dl>
+		<dl>
+	<dt><a href="../DB/DB_oci8.html#methodmodifyQuery">DB_oci8::modifyQuery()</a></dt>
+		<dd></dd>
+	</dl>
+	</p>
+
+
+
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$query</b>&nbsp;&nbsp;</td>
+        <td>query to modify</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodnextId"></a>
+	<h3>method nextId <span class="smalllinenumber">[line <a href="..//__filesource/fsource_DB__frameworkDBcommon.php.html#a1285">1285</a>]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>mixed nextId(
+string
+$seq_name, [boolean
+$ondemand = true])</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		returns the next free id of a sequence<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>return:</b>&nbsp;&nbsp;</td><td>DB_Error or id</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	<p>Overridden in child classes as:<br />
+		<dl>
+	<dt><a href="../DB/DB_fbsql.html#methodnextId">DB_fbsql::nextId()</a></dt>
+		<dd>Get the next value in a sequence.  We emulate sequences  for fbsql.  Will create the sequence if it does not exist.</dd>
+	</dl>
+		<dl>
+	<dt><a href="../DB/DB_ibase.html#methodnextId">DB_ibase::nextId()</a></dt>
+		<dd>Get the next value in a sequence.</dd>
+	</dl>
+		<dl>
+	<dt><a href="../DB/DB_mssql.html#methodnextId">DB_mssql::nextId()</a></dt>
+		<dd>Get the next value in a sequence.  We emulate sequences  for MSSQL.  Will create the sequence if it does not exist.</dd>
+	</dl>
+		<dl>
+	<dt><a href="../DB/DB_mysql.html#methodnextId">DB_mysql::nextId()</a></dt>
+		<dd>Get the next value in a sequence.  We emulate sequences  for MySQL.  Will create the sequence if it does not exist.</dd>
+	</dl>
+		<dl>
+	<dt><a href="../DB/DB_oci8.html#methodnextId">DB_oci8::nextId()</a></dt>
+		<dd>Get the next value in a sequence.  We emulate sequences  for MySQL.  Will create the sequence if it does not exist.</dd>
+	</dl>
+		<dl>
+	<dt><a href="../DB/DB_odbc.html#methodnextId">DB_odbc::nextId()</a></dt>
+		<dd>Get the next value in a sequence.  We emulate sequences  for odbc. Will create the sequence if it does not exist.</dd>
+	</dl>
+		<dl>
+	<dt><a href="../DB/DB_pgsql.html#methodnextId">DB_pgsql::nextId()</a></dt>
+		<dd>Get the next value in a sequence.</dd>
+	</dl>
+	</p>
+
+
+
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$seq_name</b>&nbsp;&nbsp;</td>
+        <td>name of the sequence</td>
+      </tr>
+          <tr>
+        <td class="type">boolean&nbsp;&nbsp;</td>
+        <td><b>$ondemand</b>&nbsp;&nbsp;</td>
+        <td>when true the seqence is                           automatic created, if it                           not exists</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodnumRows"></a>
+	<h3>method numRows <span class="smalllinenumber">[line <a href="..//__filesource/fsource_DB__frameworkDBcommon.php.html#a1240">1240</a>]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>mixed numRows(
+object DB_Result
+$result)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		returns the number of rows in a result object<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>return:</b>&nbsp;&nbsp;</td><td>DB_Error or the number of rows</td>
+  </tr>
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	<p>Overridden in child classes as:<br />
+		<dl>
+	<dt><a href="../DB/DB_dbase.html#methodnumRows">DB_dbase::numRows()</a></dt>
+		<dd></dd>
+	</dl>
+		<dl>
+	<dt><a href="../DB/DB_fbsql.html#methodnumRows">DB_fbsql::numRows()</a></dt>
+		<dd>Get the number of rows in a result set.</dd>
+	</dl>
+		<dl>
+	<dt><a href="../DB/DB_ifx.html#methodnumRows">DB_ifx::numRows()</a></dt>
+		<dd></dd>
+	</dl>
+		<dl>
+	<dt><a href="../DB/DB_msql.html#methodnumRows">DB_msql::numRows()</a></dt>
+		<dd></dd>
+	</dl>
+		<dl>
+	<dt><a href="../DB/DB_mssql.html#methodnumRows">DB_mssql::numRows()</a></dt>
+		<dd></dd>
+	</dl>
+		<dl>
+	<dt><a href="../DB/DB_mysql.html#methodnumRows">DB_mysql::numRows()</a></dt>
+		<dd>Get the number of rows in a result set.</dd>
+	</dl>
+		<dl>
+	<dt><a href="../DB/DB_oci8.html#methodnumRows">DB_oci8::numRows()</a></dt>
+		<dd></dd>
+	</dl>
+		<dl>
+	<dt><a href="../DB/DB_odbc.html#methodnumRows">DB_odbc::numRows()</a></dt>
+		<dd>ODBC may or may not support counting rows in the result set of  SELECTs.</dd>
+	</dl>
+		<dl>
+	<dt><a href="../DB/DB_pgsql.html#methodnumRows">DB_pgsql::numRows()</a></dt>
+		<dd>Get the number of rows in a result set.</dd>
+	</dl>
+		<dl>
+	<dt><a href="../DB/DB_sqlite.html#methodnumRows">DB_sqlite::numRows()</a></dt>
+		<dd>Gets the number of rows affected by a query.</dd>
+	</dl>
+		<dl>
+	<dt><a href="../DB/DB_sybase.html#methodnumRows">DB_sybase::numRows()</a></dt>
+		<dd>Get the number of rows in a result set.</dd>
+	</dl>
+	</p>
+
+
+
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">object DB_Result&nbsp;&nbsp;</td>
+        <td><b>$result</b>&nbsp;&nbsp;</td>
+        <td>the result object to check</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodprepare"></a>
+	<h3>method prepare <span class="smalllinenumber">[line <a href="..//__filesource/fsource_DB__frameworkDBcommon.php.html#a405">405</a>]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>resource prepare(
+string
+$query)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Prepares a query for multiple execution with execute().<br /><br /><p>With some database backends, this is emulated.  prepare() requires a generic query as string like  &quot;INSERT INTO numbers VALUES(?,?,?)&quot;. The ? are wildcards.  Types of wildcards:    ? - a quoted scalar value, i.e. strings, integers    &amp; - requires a file name, the content of the file        insert into the query (i.e. saving binary data        in a db)    ! - value is inserted 'as is'</p><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>return:</b>&nbsp;&nbsp;</td><td>handle for the query</td>
+  </tr>
+  <tr>
+    <td><b>see:</b>&nbsp;&nbsp;</td><td><a href="../DB/DB_common.html#methodexecute">DB_common::execute()</a></td>
+  </tr>
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	<p>Overridden in child classes as:<br />
+		<dl>
+	<dt><a href="../DB/DB_ibase.html#methodprepare">DB_ibase::prepare()</a></dt>
+		<dd>Prepares a query for multiple execution with execute().</dd>
+	</dl>
+		<dl>
+	<dt><a href="../DB/DB_oci8.html#methodprepare">DB_oci8::prepare()</a></dt>
+		<dd>Prepares a query for multiple execution with execute().  With  oci8, this is emulated.</dd>
+	</dl>
+	</p>
+
+
+
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$query</b>&nbsp;&nbsp;</td>
+        <td>the query to prepare</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodprovides"></a>
+	<h3>method provides <span class="smalllinenumber">[line <a href="..//__filesource/fsource_DB__frameworkDBcommon.php.html#a194">194</a>]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>bool provides(
+array
+$feature)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Tell whether a DB implementation or its backend extension  supports a given feature.<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>return:</b>&nbsp;&nbsp;</td><td>whether this DB implementation supports $feature</td>
+  </tr>
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+
+
+
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">array&nbsp;&nbsp;</td>
+        <td><b>$feature</b>&nbsp;&nbsp;</td>
+        <td>name of the feature (see the DB class doc)</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodquery"></a>
+	<h3>method query <span class="smalllinenumber">[line <a href="..//__filesource/fsource_DB__frameworkDBcommon.php.html#a754">754</a>]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>mixed &amp;query(
+string
+$query, [string
+$params = array()])</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Send a query to the database and return any results with a  DB_result object.<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>return:</b>&nbsp;&nbsp;</td><td>a DB_result object or DB_OK on success, a DB                 error on failure</td>
+  </tr>
+  <tr>
+    <td><b>see:</b>&nbsp;&nbsp;</td><td>DB_common::execute</td>
+  </tr>
+  <tr>
+    <td><b>see:</b>&nbsp;&nbsp;</td><td>DB_common::prepare</td>
+  </tr>
+  <tr>
+    <td><b>see:</b>&nbsp;&nbsp;</td><td>DB::isError</td>
+  </tr>
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	<p>Overridden in child classes as:<br />
+		<dl>
+	<dt><a href="../DB/DB_dbase.html#methodquery">DB_dbase::query()</a></dt>
+		<dd></dd>
+	</dl>
+	</p>
+
+
+
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$query</b>&nbsp;&nbsp;</td>
+        <td>the SQL query or the statement to prepare</td>
+      </tr>
+          <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$params</b>&nbsp;&nbsp;</td>
+        <td>the data to be added to the query</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodquote"></a>
+	<h3>method quote <span class="smalllinenumber">[line <a href="..//__filesource/fsource_DB__frameworkDBcommon.php.html#a177">177</a>]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>string quote(
+string
+$string)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Quotes a string so it can be safely used in a query. It will return  the string with single quotes around. Other backend quote styles  should override this method.<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>return:</b>&nbsp;&nbsp;</td><td>The NULL string or the string quotes                 in magic_quote_sybase style</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	<p>Overridden in child classes as:<br />
+		<dl>
+	<dt><a href="../DB/DB_mysql.html#methodquote">DB_mysql::quote()</a></dt>
+		<dd>Quote the given string so it can be safely used within string delimiters  in a query.</dd>
+	</dl>
+		<dl>
+	<dt><a href="../DB/DB_odbc.html#methodquote">DB_odbc::quote()</a></dt>
+		<dd>Quote the given string so it can be safely used within string delimiters  in a query.</dd>
+	</dl>
+		<dl>
+	<dt><a href="../DB/DB_pgsql.html#methodquote">DB_pgsql::quote()</a></dt>
+		<dd>Quote the given string so it can be safely used within string delimiters  in a query.</dd>
+	</dl>
+	</p>
+
+
+
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$string</b>&nbsp;&nbsp;</td>
+        <td>the input string to quote</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodquoteString"></a>
+	<h3>method quoteString <span class="smalllinenumber">[line <a href="..//__filesource/fsource_DB__frameworkDBcommon.php.html#a158">158</a>]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>string quoteString(
+mixed
+$string)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Quotes a string so it can be safely used within string delimiters  in a query (preserved for compatibility issues, quote() is preffered).<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>return:</b>&nbsp;&nbsp;</td><td>quoted string</td>
+  </tr>
+  <tr>
+    <td><b>see:</b>&nbsp;&nbsp;</td><td><a href="../DB/DB_common.html#methodquote">DB_common::quote()</a></td>
+  </tr>
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+
+
+
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodraiseError"></a>
+	<h3>method raiseError <span class="smalllinenumber">[line <a href="..//__filesource/fsource_DB__frameworkDBcommon.php.html#a277">277</a>]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>object a &amp;raiseError(
+[mixed
+$code = DB_ERROR], [int
+$mode = null], [mixed
+$options = null], [string
+$userinfo = null], [mixed
+$nativecode = null])</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		This method is used to communicate an error and invoke error  callbacks etc.  Basically a wrapper for PEAR::raiseError  without the message string.<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>return:</b>&nbsp;&nbsp;</td><td>PEAR error object</td>
+  </tr>
+  <tr>
+    <td><b>see:</b>&nbsp;&nbsp;</td><td><a href="../undefined_package/PEAR_Error.html">PEAR_Error</a></td>
+  </tr>
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+
+Overrides <a href="../undefined_package/PEAR.html#methodraiseError">PEAR::raiseError()</a> (This method is a wrapper that returns an instance of the  configured error class with this object's default error  handling applied.  If the $mode and $options parameters are not  specified, the object's defaults are used.)<br /><br />
+
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">mixed&nbsp;&nbsp;</td>
+        <td><b>$code</b>&nbsp;&nbsp;</td>
+        <td>integer error code, or a PEAR error object (all                  other parameters are ignored if this parameter is                  an object</td>
+      </tr>
+          <tr>
+        <td class="type">int&nbsp;&nbsp;</td>
+        <td><b>$mode</b>&nbsp;&nbsp;</td>
+        <td>error mode, see PEAR_Error docs</td>
+      </tr>
+          <tr>
+        <td class="type">mixed&nbsp;&nbsp;</td>
+        <td><b>$options</b>&nbsp;&nbsp;</td>
+        <td>If error mode is PEAR_ERROR_TRIGGER, this is the                  error level (E_USER_NOTICE etc).  If error mode is                  PEAR_ERROR_CALLBACK, this is the callback function,                  either as a function name, or as an array of an                  object and method name.  For other error modes this                  parameter is ignored.</td>
+      </tr>
+          <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$userinfo</b>&nbsp;&nbsp;</td>
+        <td>Extra debug information.  Defaults to the last                  query and native error code.</td>
+      </tr>
+          <tr>
+        <td class="type">mixed&nbsp;&nbsp;</td>
+        <td><b>$nativecode</b>&nbsp;&nbsp;</td>
+        <td>Native error code, integer or string depending the                  backend.</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodrollback"></a>
+	<h3>method rollback <span class="smalllinenumber">[line <a href="..//__filesource/fsource_DB__frameworkDBcommon.php.html#a1224">1224</a>]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>mixed rollback(
+)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		starts a rollback<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>return:</b>&nbsp;&nbsp;</td><td>DB_Error</td>
+  </tr>
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	<p>Overridden in child classes as:<br />
+		<dl>
+	<dt><a href="../DB/DB_fbsql.html#methodrollback">DB_fbsql::rollback()</a></dt>
+		<dd></dd>
+	</dl>
+		<dl>
+	<dt><a href="../DB/DB_ibase.html#methodrollback">DB_ibase::rollback()</a></dt>
+		<dd></dd>
+	</dl>
+		<dl>
+	<dt><a href="../DB/DB_mssql.html#methodrollback">DB_mssql::rollback()</a></dt>
+		<dd>Roll back (undo) the current transaction.</dd>
+	</dl>
+		<dl>
+	<dt><a href="../DB/DB_mysql.html#methodrollback">DB_mysql::rollback()</a></dt>
+		<dd>Roll back (undo) the current transaction.</dd>
+	</dl>
+		<dl>
+	<dt><a href="../DB/DB_oci8.html#methodrollback">DB_oci8::rollback()</a></dt>
+		<dd>Roll back all uncommitted transactions on the current connection.</dd>
+	</dl>
+		<dl>
+	<dt><a href="../DB/DB_odbc.html#methodrollback">DB_odbc::rollback()</a></dt>
+		<dd></dd>
+	</dl>
+		<dl>
+	<dt><a href="../DB/DB_pgsql.html#methodrollback">DB_pgsql::rollback()</a></dt>
+		<dd>Roll back (undo) the current transaction.</dd>
+	</dl>
+	</p>
+
+
+
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodsetFetchMode"></a>
+	<h3>method setFetchMode <span class="smalllinenumber">[line <a href="..//__filesource/fsource_DB__frameworkDBcommon.php.html#a330">330</a>]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>void setFetchMode(
+integer
+$fetchmode, [string
+$object_class = null])</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Sets which fetch mode should be used by default on queries  on this connection.<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>see:</b>&nbsp;&nbsp;</td><td>DB_Row::DB_Row()</td>
+  </tr>
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+  <tr>
+    <td><b>see:</b>&nbsp;&nbsp;</td><td><a href="../DB/_universibo2_framework_DB_php.html#defineDB_FETCHMODE_OBJECT">DB_FETCHMODE_OBJECT</a></td>
+  </tr>
+  <tr>
+    <td><b>see:</b>&nbsp;&nbsp;</td><td><a href="../DB/_universibo2_framework_DB_php.html#defineDB_FETCHMODE_FLIPPED">DB_FETCHMODE_FLIPPED</a></td>
+  </tr>
+  <tr>
+    <td><b>see:</b>&nbsp;&nbsp;</td><td><a href="../DB/_universibo2_framework_DB_php.html#defineDB_FETCHMODE_ASSOC">DB_FETCHMODE_ASSOC</a></td>
+  </tr>
+  <tr>
+    <td><b>see:</b>&nbsp;&nbsp;</td><td><a href="../DB/_universibo2_framework_DB_php.html#defineDB_FETCHMODE_ORDERED">DB_FETCHMODE_ORDERED</a></td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+
+
+
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">integer&nbsp;&nbsp;</td>
+        <td><b>$fetchmode</b>&nbsp;&nbsp;</td>
+        <td>DB_FETCHMODE_ORDERED or         DB_FETCHMODE_ASSOC, possibly bit-wise OR'ed with         DB_FETCHMODE_FLIPPED.</td>
+      </tr>
+          <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$object_class</b>&nbsp;&nbsp;</td>
+        <td>The class of the object                       to be returned by the fetch methods when                       the DB_FETCHMODE_OBJECT mode is selected.                       If no class is specified by default a cast                       to object from the assoc array row will be done.                       There is also the posibility to use and extend the                       'DB_Row' class.</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodsetOption"></a>
+	<h3>method setOption <span class="smalllinenumber">[line <a href="..//__filesource/fsource_DB__frameworkDBcommon.php.html#a356">356</a>]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>mixed setOption(
+string
+$option, mixed
+$value)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		set the option for the db class<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>return:</b>&nbsp;&nbsp;</td><td>DB_OK or DB_Error</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+
+
+
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$option</b>&nbsp;&nbsp;</td>
+        <td>option name</td>
+      </tr>
+          <tr>
+        <td class="type">mixed&nbsp;&nbsp;</td>
+        <td><b>$value</b>&nbsp;&nbsp;</td>
+        <td>value for the option</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodtableInfo"></a>
+	<h3>method tableInfo <span class="smalllinenumber">[line <a href="..//__filesource/fsource_DB__frameworkDBcommon.php.html#a1334">1334</a>]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>mixed tableInfo(
+object DB_Result
+$result, [mixed
+$mode = null])</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		returns meta data about the result set<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>return:</b>&nbsp;&nbsp;</td><td>DB_Error</td>
+  </tr>
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	<p>Overridden in child classes as:<br />
+		<dl>
+	<dt><a href="../DB/DB_fbsql.html#methodtableInfo">DB_fbsql::tableInfo()</a></dt>
+		<dd></dd>
+	</dl>
+		<dl>
+	<dt><a href="../DB/DB_ibase.html#methodtableInfo">DB_ibase::tableInfo()</a></dt>
+		<dd>Returns information about a table or a result set</dd>
+	</dl>
+		<dl>
+	<dt><a href="../DB/DB_mssql.html#methodtableInfo">DB_mssql::tableInfo()</a></dt>
+		<dd>Returns information about a table or a result set</dd>
+	</dl>
+		<dl>
+	<dt><a href="../DB/DB_mysql.html#methodtableInfo">DB_mysql::tableInfo()</a></dt>
+		<dd></dd>
+	</dl>
+		<dl>
+	<dt><a href="../DB/DB_oci8.html#methodtableInfo">DB_oci8::tableInfo()</a></dt>
+		<dd></dd>
+	</dl>
+		<dl>
+	<dt><a href="../DB/DB_pgsql.html#methodtableInfo">DB_pgsql::tableInfo()</a></dt>
+		<dd>Returns information about a table or a result set</dd>
+	</dl>
+	</p>
+
+
+
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">object DB_Result&nbsp;&nbsp;</td>
+        <td><b>$result</b>&nbsp;&nbsp;</td>
+        <td>the result object to analyse</td>
+      </tr>
+          <tr>
+        <td class="type">mixed&nbsp;&nbsp;</td>
+        <td><b>$mode</b>&nbsp;&nbsp;</td>
+        <td>depends on implementation</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodtoString"></a>
+	<h3>method toString <span class="smalllinenumber">[line <a href="..//__filesource/fsource_DB__frameworkDBcommon.php.html#a120">120</a>]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>string toString(
+)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		String conversation<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>private</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+
+
+
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+</div><br />
+
+        <div class="credit">
+		    <hr />
+		    Documentation generated on Fri, 28 Nov 2003 13:08:22 +0100 by <a href="http://www.phpdoc.org">phpDocumentor 1.2.3</a>
+	      </div>
+      </td></tr></table>
+    </td>
+  </tr>
+</table>
+
+</body>
+</html>

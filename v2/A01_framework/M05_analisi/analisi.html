@@ -1,0 +1,114 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<html>
+<head>
+	<title>Untitled</title>
+	<LINK REL=StyleSheet HREF="../../nat.css" TYPE="text/css">
+</head>
+
+<body>
+
+<h2>Analisi del problema</h2>
+<p>Per evitare alcune problematiche di sicurezza e consistenza legate alla stile 
+  di programmazione in PHP si vuole creare il framework completamente OO, che 
+  inviti chi lo utilizza ad adottare questo stile di programmazione.</p>
+<p>Dall'analisi dei requisiti e del materiale consultato nella fase di benchmarking 
+  &egrave; stato deciso di porre un <strong>Front Controller Pattern</strong> 
+  (si veda: <a href="http://wact.sourceforge.net/index.php/FrontController">http://wact.sourceforge.net/index.php/FrontController</a> 
+  ) alla base dell'architettura del framework.</p>
+<p><img src="../images/FrontControllerClassDiagram.png" width="620" height="383"></p>
+<p class="piccolo">A fronte di una richiesta HTTP, viene mandato in esecuzione 
+  un oggetto <strong>Receiver</strong> che ha il compito di impostare l'envirorment 
+  del linguaggio PHP, instanziare il <strong>FrontController</strong> fornendogli 
+  i parametri di configurazione dell'applicazione e lanciare executeCommand() 
+  per far partire l'esecuzione di un comando.<br>
+  Il FrontController ha il compito di eseguire il dispatch della richiesta istanziondo 
+  l'oggetto che esegue il comando richiesto, attenderne la risposta per mostrarne 
+  l'output e/o eseguire altri comandi.<br>
+  I comandi per poter essere invocati devono implementare la classe astratta <strong>BaseCommand</strong> 
+  ridefinendo il metodo execute() ed opzionalmente i metodi init() e shutdown(). 
+</p>
+<p>Il Front Controller Pattern pu&ograve; essere racchiuso in un'architettura 
+  <strong>Model-View-Control</strong> che fornisce anche la base per un'architettuta 
+  3-Tier separando accesso ai dati su Database e visualizzazione tramite Template 
+  Engine (<a href="http://java.sun.com/blueprints/guidelines/designing_enterrprise_applications_j2ee/web-tier.html" target="_blank">http://java.sun.com/blueprints/guidelines/designing_enterrprise_applications_j2ee/web-tier.html</a>):</p>
+<p><img src="../images/MVCClassDiagram.png" width="700" height="620"></p>
+<p class="piccolo">Il Front Controller viene arricchito con due <strong>Factory 
+  Method</strong> getTemplateEngine() e getDbConnection() che creano le istanze 
+  degli oggetti di tipo rispettivamente TemplateEngine e DB, e implementano una 
+  sorta di <strong>&quot;Singleton&quot;</strong> per non replicare inutilmente 
+  le istanze.<br>
+  Il sistema del TemplateEngine &egrave; configurato in modo da poter mostrare 
+  automaticamente diverse viste semplicemente modificando un parametro della richiesta.</p>
+<p class="piccolo"><font color="#FF00FF">/** NOTA BENE: Allo stato attuale il 
+  TemplateEngine restituito &egrave; Smarty (non esiste in realt&agrave; la catena 
+  di ereditariet&agrave; mostrata in figura). <br>
+  I comandi tutta via devono essere costruiti rispettando l'interfaccia mostrata 
+  nella classe astratta TemplateEngine (anche se non molto elegante nel modo in 
+  cui definita), in questo modo nulla vieta di costruire classi <strong>Wrapper</strong> 
+  per altri TemplateEngines (esempio: xtemplate, pear::template), oppure renderne 
+  disponibili direttamente le interfacce rendendo i &quot;Commands&quot; non portabili&quot; 
+  */</font></p>
+<p class="piccolo">NOTA: Perche non utilizzare XML+XSLT per creare l'output grafico?<br>
+  - al momento di inizio del progetto XML non &egrave; supportato da tutti i browser 
+  e il supporto lato server di XML di PHP &egrave; ancora in parte sperimentale 
+  e con performance peggiori.<br>
+  - eventualemnte la soluzione attuale permette di creare un output XML da far 
+  poi interpretare.</p>
+<p class="piccolo">Al seguente link si pu&ograve; trovare un'analisi dei sistemi 
+  di : <a class="piccolo" href="../allegati/dbal/index.html">database abstraction</a></p>
+<p class="piccolo"><font color="#FF00FF">/** NOTA BENE: Allo stato attuale per 
+  l'accesso a DatabaseRelazionali si &egrave; scelto Pear::DB, nulla vieta di 
+  modificare il factory method per chi desiderasse utilizzare altri database abstraction 
+  layer. */</font></p>
+<p>Per soddisfare il requisito della creazione di una <strong>Toolbox</strong>, 
+  essendo il FrontController gi&agrave; in possesso delle informazioni di configurazione 
+  dell'applicazione e gi&agrave; associato al BaseCommand si &egrave; scelto di 
+  integragli questa funzionalit&agrave; (si veda al riguardo l'articolo &quot;Toolbox: 
+  Use your singletons wisely&quot; <a href="http://www-106.ibm.com/developerworks/webservices/library/co-single.html">http://www-106.ibm.com/developerworks/webservices/library/co-single.html</a> 
+  ).<br>
+  Possono essere cos&igrave; creati altri factory method per poter usufruire di 
+  istanze di oggetti configurati secondo le specifiche nel file di configurazione 
+  come PHPMailer, NuSOAP, Kronos o qualsiasi altro componente utile all'applicazione.<br>
+  La Toolbox permette in questo modo di disaccoppiare gli oggetti tra di loro, 
+  l'unico vincolo &egrave; il legame con con il FrontController per la configurazione.</p>
+<h4>Error Handling</h4>
+<p>Viste le carenze del linguaggio e la cripticit&agrave; delle documentazioni 
+  di altri componenti per l'ErrorHandling si &egrave; deciso di crearsi una nuova 
+  classe Error disponibile anche per i comandi.<br>
+  Il sistema permette di creare delle categorie di errori, e definire delle funzioni 
+  callback per la loro gestione.<br>
+  Si &egrave; scelto di privilegiare la semplicit&agrave; d'uso e il basso overhead 
+  della gestione degli errori <a href="http://www.eng.mu.edu/corlissg/229.S02/n_error_handling.html">http://www.eng.mu.edu/corlissg/229.S02/n_error_handling.html</a></p>
+<p> Il framework utilizza una propria categoria di errori _ERROR_CRITICAL il cui 
+  handler deve interrompere sempre e comunque l'esecuzione, deve essere permesso 
+  all'applicazione definire nuove categorie con i rispettivi handler.</p>
+<h4>LogHandler</h4>
+<p>Necessaria per mantenere persistenza di informazioni rilevanti su disco.<br>
+  Puo essere a sua volta riutilizzata dagli handler degli errori per salvare le 
+  informazioni riguardanti le situazioni di errore.<br>
+  Deve poter essere estesa ed utilizzata dall'applicazione per definire eventuali 
+  altri log.</p>
+<h4>Considerazioni Realtive al Unit Testing</h4>
+<p>Un framework con comandi astratti &egrave; difficilmente testabile.<br>
+  Risultano inoltre difficilmente testabili le applicazioni web in PHP a causa 
+  della loro struttura in cui le richieste HTTP non sono oggetti riproducibili 
+  (&egrave; impossibile creare degli oggetti ) ma elementi nativi del linguaggio.<br>
+  In proposito si &egrave; pensato di costruire un oggetto wrapper per simulare 
+  le richieste web da usare anche come mock object, ma ci&ograve; avrebbe comportato 
+  uno snaturamento del linguaggio e una maggiore difficolt&agrave; nel non poter 
+  trattare gli elementi nativi (gli array superglobal $_GET, $_POST, $_SESSION) 
+  di PHP che risultano di enorme comodit&agrave;.</p>
+<p> Per migliorare le possibilit&agrave; di testing pu&ograve; essere utile per 
+  il progettista delle applicazioni spostare la maggiorparte delle funzionalit&agrave; 
+  dai comandi del framework sugli oggetti del dominio dell'applicazione ci&ograve; 
+  per&ograve; comporta in generale un degrado delle prestazioni.</p>
+<p> Si &egrave; scelto di integrare nativamente <a href="http://pear.php.net/package-info.php?pacid=38">pear::PhpUnit</a> 
+  all'interno di un comando applicativo &quot;UnitTest&quot;, questo comando pu&ograve; 
+  essere disattivato da configurazione, ma risulta utile per ricreare l'ambiente 
+  dell'applicazione creato dal framework al momento del testing.</p>
+<p>Si possono leggere i seguenti articoli riguardo il testing con PHPUnit, insieme 
+  al framework viene fornito un esempio.<br>
+  <a href="http://agilemovement.it/modules.php?op=modload&name=News&file=article&sid=344&mode=thread&order=0&thold=0">http://agilemovement.it/modules.php?op=modload&amp;name=News&amp;file=article&amp;sid=344&amp;mode=thread&amp;order=0&amp;thold=0</a></p>
+</body>
+</html>

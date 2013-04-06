@@ -1,0 +1,984 @@
+<html>
+<head>
+<title>Docs For Class PHPUnit_TestResult</title>
+<link rel="stylesheet" type="text/css" href="../media/style.css">
+</head>
+<body>
+
+<table border="0" cellspacing="0" cellpadding="0" height="48" width="100%">
+  <tr>
+    <td class="header_top">PHPUnit</td>
+  </tr>
+  <tr><td class="header_line"><img src="../media/empty.png" width="1" height="1" border="0" alt=""  /></td></tr>
+  <tr>
+    <td class="header_menu">
+  		  [ <a href="../classtrees_PHPUnit.html" class="menu">class tree: PHPUnit</a> ]
+		  [ <a href="../elementindex_PHPUnit.html" class="menu">index: PHPUnit</a> ]
+		  [ <a href="../elementindex.html" class="menu">all elements</a> ]
+    </td>
+  </tr>
+  <tr><td class="header_line"><img src="../media/empty.png" width="1" height="1" border="0" alt=""  /></td></tr>
+</table>
+
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+  <tr valign="top">
+    <td width="200" class="menu">
+	<div id="todolist">
+			<p><a href="../todolist.html">Todo List</a></p>
+	</div>
+      <b>Packages:</b><br />
+              <a href="../li_undefined_package.html">undefined_package</a><br />
+              <a href="../li_DB.html">DB</a><br />
+              <a href="../li_framework.html">framework</a><br />
+              <a href="../li_kronos.html">kronos</a><br />
+              <a href="../li_PHPMailer.html">PHPMailer</a><br />
+              <a href="../li_PHPUnit.html">PHPUnit</a><br />
+              <a href="../li_Smarty.html">Smarty</a><br />
+              <a href="../li_universibo.html">universibo</a><br />
+              <a href="../li_universibo_tests.html">universibo_tests</a><br />
+            <br /><br />
+                        <b>Classes:</b><br />
+        <div class="package">
+		    		<a href="../PHPUnit/PHPUnit.html">PHPUnit</a><br />
+	    		<a href="../PHPUnit/PHPUnit_Assert.html">PHPUnit_Assert</a><br />
+	    		<a href="../PHPUnit/PHPUnit_RepeatedTest.html">PHPUnit_RepeatedTest</a><br />
+	    		<a href="../PHPUnit/PHPUnit_TestCase.html">PHPUnit_TestCase</a><br />
+	    		<a href="../PHPUnit/PHPUnit_TestDecorator.html">PHPUnit_TestDecorator</a><br />
+	    		<a href="../PHPUnit/PHPUnit_TestFailure.html">PHPUnit_TestFailure</a><br />
+	    		<a href="../PHPUnit/PHPUnit_TestListener.html">PHPUnit_TestListener</a><br />
+	    		<a href="../PHPUnit/PHPUnit_TestResult.html">PHPUnit_TestResult</a><br />
+	    		<a href="../PHPUnit/PHPUnit_TestSuite.html">PHPUnit_TestSuite</a><br />
+	  </div>
+      
+            <b>Files:</b><br />
+      	  <div class="package">
+			<a href="../PHPUnit/_universibo2_tests_PHPUnit_Assert_php.html">		Assert.php
+		</a><br>
+			<a href="../PHPUnit/_universibo2_tests_PHPUnit_php.html">		PHPUnit.php
+		</a><br>
+			<a href="../PHPUnit/_universibo2_tests_PHPUnit_RepeatedTest_php.html">		RepeatedTest.php
+		</a><br>
+			<a href="../PHPUnit/_universibo2_tests_PHPUnit_TestCase_php.html">		TestCase.php
+		</a><br>
+			<a href="../PHPUnit/_universibo2_tests_PHPUnit_TestDecorator_php.html">		TestDecorator.php
+		</a><br>
+			<a href="../PHPUnit/_universibo2_tests_PHPUnit_TestFailure_php.html">		TestFailure.php
+		</a><br>
+			<a href="../PHPUnit/_universibo2_tests_PHPUnit_TestListener_php.html">		TestListener.php
+		</a><br>
+			<a href="../PHPUnit/_universibo2_tests_PHPUnit_TestResult_php.html">		TestResult.php
+		</a><br>
+			<a href="../PHPUnit/_universibo2_tests_PHPUnit_TestSuite_php.html">		TestSuite.php
+		</a><br>
+	  </div><br />
+      
+          </td>
+    <td>
+      <table cellpadding="10" cellspacing="0" width="100%" border="0"><tr><td valign="top">
+
+<h1>Class: PHPUnit_TestResult</h1>
+Source Location: /tests/PHPUnit/TestResult.php<br /><br />
+
+
+
+<table width="100%" border="0">
+<tr><td valign="top">
+
+<h3><a href="#class_details">Class Overview</a></h3>
+<pre></pre><br />
+<div class="description">A TestResult collects the results of executing a test case.</div><br /><br />
+<h4>Author(s):</h4>
+<ul>
+          <li>Sebastian Bergmann &lt;<a href="mailto:sb@sebastian-bergmann.de">mailto:sb@sebastian-bergmann.de</a>&gt;           Based upon JUnit, see http://www.junit.org/ for details.           Ilias Bartolini <br /></li>
+      </ul>
+
+
+
+
+    
+
+
+</td>
+
+<td valign="top">
+<h3><a href="#class_vars">Variables</a></h3>
+<ul>
+    <li><a href="../PHPUnit/PHPUnit_TestResult.html#var$_errors">$_errors</a></li>
+    <li><a href="../PHPUnit/PHPUnit_TestResult.html#var$_failures">$_failures</a></li>
+    <li><a href="../PHPUnit/PHPUnit_TestResult.html#var$_listeners">$_listeners</a></li>
+    <li><a href="../PHPUnit/PHPUnit_TestResult.html#var$_passedTests">$_passedTests</a></li>
+    <li><a href="../PHPUnit/PHPUnit_TestResult.html#var$_runTests">$_runTests</a></li>
+    <li><a href="../PHPUnit/PHPUnit_TestResult.html#var$_stop">$_stop</a></li>
+  </ul>
+</td>
+
+<td valign="top">
+<h3><a href="#class_methods">Methods</a></h3>
+<ul>
+    <li><a href="../PHPUnit/PHPUnit_TestResult.html#methodaddError">addError</a></li>
+    <li><a href="../PHPUnit/PHPUnit_TestResult.html#methodaddFailure">addFailure</a></li>
+    <li><a href="../PHPUnit/PHPUnit_TestResult.html#methodaddListener">addListener</a></li>
+    <li><a href="../PHPUnit/PHPUnit_TestResult.html#methodaddPassedTest">addPassedTest</a></li>
+    <li><a href="../PHPUnit/PHPUnit_TestResult.html#methodendTest">endTest</a></li>
+    <li><a href="../PHPUnit/PHPUnit_TestResult.html#methoderrorCount">errorCount</a></li>
+    <li><a href="../PHPUnit/PHPUnit_TestResult.html#methoderrors">errors</a></li>
+    <li><a href="../PHPUnit/PHPUnit_TestResult.html#methodfailureCount">failureCount</a></li>
+    <li><a href="../PHPUnit/PHPUnit_TestResult.html#methodfailures">failures</a></li>
+    <li><a href="../PHPUnit/PHPUnit_TestResult.html#methodpassedTests">passedTests</a></li>
+    <li><a href="../PHPUnit/PHPUnit_TestResult.html#methodremoveListener">removeListener</a></li>
+    <li><a href="../PHPUnit/PHPUnit_TestResult.html#methodrun">run</a></li>
+    <li><a href="../PHPUnit/PHPUnit_TestResult.html#methodrunCount">runCount</a></li>
+    <li><a href="../PHPUnit/PHPUnit_TestResult.html#methodshouldStop">shouldStop</a></li>
+    <li><a href="../PHPUnit/PHPUnit_TestResult.html#methodstartTest">startTest</a></li>
+    <li><a href="../PHPUnit/PHPUnit_TestResult.html#methodstop">stop</a></li>
+    <li><a href="../PHPUnit/PHPUnit_TestResult.html#methodtoHTML">toHTML</a></li>
+    <li><a href="../PHPUnit/PHPUnit_TestResult.html#methodtoHtmlTable">toHtmlTable</a></li>
+    <li><a href="../PHPUnit/PHPUnit_TestResult.html#methodtoString">toString</a></li>
+    <li><a href="../PHPUnit/PHPUnit_TestResult.html#methodwasSuccessful">wasSuccessful</a></li>
+  </ul>
+</td>
+
+</tr></table>
+<hr />
+
+<table width="100%" border="0"><tr>
+
+
+
+
+<td valign="top">
+<h3>Inherited Variables</h3>
+</td>
+
+<td valign="top">
+<h3>Inherited Methods</h3>
+<div class="tags">
+</div>
+</td>
+
+</tr></table>
+<hr />
+
+<a name="class_details"></a>
+<h3>Class Details</h3>
+<div class="tags">
+[line <a href="..//__filesource/fsource_PHPUnit__testsPHPUnitTestResult.php.html#a29">29</a>]<br />
+A TestResult collects the results of executing a test case.<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>author:</b>&nbsp;&nbsp;</td><td>Sebastian Bergmann &lt;<a href="mailto:sb@sebastian-bergmann.de">mailto:sb@sebastian-bergmann.de</a>&gt;           Based upon JUnit, see http://www.junit.org/ for details.           Ilias Bartolini <br /></td>
+  </tr>
+</table>
+</div>
+</div><br /><br />
+<div class="top">[ <a href="#top">Top</a> ]</div><br />
+
+<hr />
+<a name="class_vars"></a>
+<h3>Class Variables</h3>
+<div class="tags">
+	<a name="var$_errors"></a>
+	<p></p>
+	<h4>$_errors = <span class="value">array()</span></h4>
+	<p>[line <a href="..//__filesource/fsource_PHPUnit__testsPHPUnitTestResult.php.html#a34">34</a>]</p>
+  <br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>protected</td>
+  </tr>
+</table>
+</div>
+
+  <br />
+	<div class="tags">
+  <table border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td><b>Type:</b>&nbsp;&nbsp;</td>
+      <td>array</td>
+    </tr>
+      </table>
+	</div><br /><br />
+	<div class="top">[ <a href="#top">Top</a> ]</div><br />
+	<a name="var$_failures"></a>
+	<p></p>
+	<h4>$_failures = <span class="value">array()</span></h4>
+	<p>[line <a href="..//__filesource/fsource_PHPUnit__testsPHPUnitTestResult.php.html#a40">40</a>]</p>
+  <br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>protected</td>
+  </tr>
+</table>
+</div>
+
+  <br />
+	<div class="tags">
+  <table border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td><b>Type:</b>&nbsp;&nbsp;</td>
+      <td>array</td>
+    </tr>
+      </table>
+	</div><br /><br />
+	<div class="top">[ <a href="#top">Top</a> ]</div><br />
+	<a name="var$_listeners"></a>
+	<p></p>
+	<h4>$_listeners = <span class="value">array()</span></h4>
+	<p>[line <a href="..//__filesource/fsource_PHPUnit__testsPHPUnitTestResult.php.html#a46">46</a>]</p>
+  <br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>protected</td>
+  </tr>
+</table>
+</div>
+
+  <br />
+	<div class="tags">
+  <table border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td><b>Type:</b>&nbsp;&nbsp;</td>
+      <td>array</td>
+    </tr>
+      </table>
+	</div><br /><br />
+	<div class="top">[ <a href="#top">Top</a> ]</div><br />
+	<a name="var$_passedTests"></a>
+	<p></p>
+	<h4>$_passedTests = <span class="value">array()</span></h4>
+	<p>[line <a href="..//__filesource/fsource_PHPUnit__testsPHPUnitTestResult.php.html#a52">52</a>]</p>
+  <br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>protected</td>
+  </tr>
+</table>
+</div>
+
+  <br />
+	<div class="tags">
+  <table border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td><b>Type:</b>&nbsp;&nbsp;</td>
+      <td>array</td>
+    </tr>
+      </table>
+	</div><br /><br />
+	<div class="top">[ <a href="#top">Top</a> ]</div><br />
+	<a name="var$_runTests"></a>
+	<p></p>
+	<h4>$_runTests = <span class="value">&nbsp;0</span></h4>
+	<p>[line <a href="..//__filesource/fsource_PHPUnit__testsPHPUnitTestResult.php.html#a58">58</a>]</p>
+  <br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>protected</td>
+  </tr>
+</table>
+</div>
+
+  <br />
+	<div class="tags">
+  <table border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td><b>Type:</b>&nbsp;&nbsp;</td>
+      <td>integer</td>
+    </tr>
+      </table>
+	</div><br /><br />
+	<div class="top">[ <a href="#top">Top</a> ]</div><br />
+	<a name="var$_stop"></a>
+	<p></p>
+	<h4>$_stop = <span class="value">&nbsp;false</span></h4>
+	<p>[line <a href="..//__filesource/fsource_PHPUnit__testsPHPUnitTestResult.php.html#a64">64</a>]</p>
+  <br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>private</td>
+  </tr>
+</table>
+</div>
+
+  <br />
+	<div class="tags">
+  <table border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td><b>Type:</b>&nbsp;&nbsp;</td>
+      <td>boolean</td>
+    </tr>
+      </table>
+	</div><br /><br />
+	<div class="top">[ <a href="#top">Top</a> ]</div><br />
+</div><br />
+
+<hr />
+<a name="class_methods"></a>
+<h3>Class Methods</h3>
+<div class="tags">
+  <hr />
+	<a name="methodaddError"></a>
+	<h3>method addError <span class="smalllinenumber">[line <a href="..//__filesource/fsource_PHPUnit__testsPHPUnitTestResult.php.html#a74">74</a>]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>void addError(
+object
+&$test, object
+&$t)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Adds an error to the list of errors.<br /><br /><p>The passed in exception caused the error.</p><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+
+
+
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">object&nbsp;&nbsp;</td>
+        <td><b>&$test</b>&nbsp;&nbsp;</td>
+        <td></td>
+      </tr>
+          <tr>
+        <td class="type">object&nbsp;&nbsp;</td>
+        <td><b>&$t</b>&nbsp;&nbsp;</td>
+        <td></td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodaddFailure"></a>
+	<h3>method addFailure <span class="smalllinenumber">[line <a href="..//__filesource/fsource_PHPUnit__testsPHPUnitTestResult.php.html#a90">90</a>]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>void addFailure(
+object
+&$test, object
+&$t)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Adds a failure to the list of failures.<br /><br /><p>The passed in exception caused the failure.</p><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+
+
+
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">object&nbsp;&nbsp;</td>
+        <td><b>&$test</b>&nbsp;&nbsp;</td>
+        <td></td>
+      </tr>
+          <tr>
+        <td class="type">object&nbsp;&nbsp;</td>
+        <td><b>&$t</b>&nbsp;&nbsp;</td>
+        <td></td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodaddListener"></a>
+	<h3>method addListener <span class="smalllinenumber">[line <a href="..//__filesource/fsource_PHPUnit__testsPHPUnitTestResult.php.html#a104">104</a>]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>void addListener(
+object
+&$listener)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Registers a TestListener.<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+
+
+
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">object&nbsp;&nbsp;</td>
+        <td><b>&$listener</b>&nbsp;&nbsp;</td>
+        <td></td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodaddPassedTest"></a>
+	<h3>method addPassedTest <span class="smalllinenumber">[line <a href="..//__filesource/fsource_PHPUnit__testsPHPUnitTestResult.php.html#a117">117</a>]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>void addPassedTest(
+object
+&$test)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Adds a passed test to the list of passed tests.<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+
+
+
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">object&nbsp;&nbsp;</td>
+        <td><b>&$test</b>&nbsp;&nbsp;</td>
+        <td></td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodendTest"></a>
+	<h3>method endTest <span class="smalllinenumber">[line <a href="..//__filesource/fsource_PHPUnit__testsPHPUnitTestResult.php.html#a127">127</a>]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>void endTest(
+object
+&$test)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Informs the result that a test was completed.<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+
+
+
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">object&nbsp;&nbsp;</td>
+        <td><b>&$test</b>&nbsp;&nbsp;</td>
+        <td></td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methoderrorCount"></a>
+	<h3>method errorCount <span class="smalllinenumber">[line <a href="..//__filesource/fsource_PHPUnit__testsPHPUnitTestResult.php.html#a139">139</a>]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>integer errorCount(
+)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Gets the number of detected errors.<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+
+
+
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methoderrors"></a>
+	<h3>method errors <span class="smalllinenumber">[line <a href="..//__filesource/fsource_PHPUnit__testsPHPUnitTestResult.php.html#a149">149</a>]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>array &amp;errors(
+)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Returns an Enumeration for the errors.<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+
+
+
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodfailureCount"></a>
+	<h3>method failureCount <span class="smalllinenumber">[line <a href="..//__filesource/fsource_PHPUnit__testsPHPUnitTestResult.php.html#a159">159</a>]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>integer failureCount(
+)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Gets the number of detected failures.<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+
+
+
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodfailures"></a>
+	<h3>method failures <span class="smalllinenumber">[line <a href="..//__filesource/fsource_PHPUnit__testsPHPUnitTestResult.php.html#a169">169</a>]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>array &amp;failures(
+)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Returns an Enumeration for the failures.<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+
+
+
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodpassedTests"></a>
+	<h3>method passedTests <span class="smalllinenumber">[line <a href="..//__filesource/fsource_PHPUnit__testsPHPUnitTestResult.php.html#a179">179</a>]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>array &amp;passedTests(
+)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Returns an Enumeration for the passed tests.<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+
+
+
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodremoveListener"></a>
+	<h3>method removeListener <span class="smalllinenumber">[line <a href="..//__filesource/fsource_PHPUnit__testsPHPUnitTestResult.php.html#a190">190</a>]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>void removeListener(
+object
+&$listener)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Unregisters a TestListener.<br /><br /><p>This requires the Zend Engine 2 (to work properly).</p><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+
+
+
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">object&nbsp;&nbsp;</td>
+        <td><b>&$listener</b>&nbsp;&nbsp;</td>
+        <td></td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodrun"></a>
+	<h3>method run <span class="smalllinenumber">[line <a href="..//__filesource/fsource_PHPUnit__testsPHPUnitTestResult.php.html#a204">204</a>]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>void run(
+object
+&$test)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Runs a TestCase.<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+
+
+
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">object&nbsp;&nbsp;</td>
+        <td><b>&$test</b>&nbsp;&nbsp;</td>
+        <td></td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodrunCount"></a>
+	<h3>method runCount <span class="smalllinenumber">[line <a href="..//__filesource/fsource_PHPUnit__testsPHPUnitTestResult.php.html#a217">217</a>]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>integer runCount(
+)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Gets the number of run tests.<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+
+
+
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodshouldStop"></a>
+	<h3>method shouldStop <span class="smalllinenumber">[line <a href="..//__filesource/fsource_PHPUnit__testsPHPUnitTestResult.php.html#a226">226</a>]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>void shouldStop(
+)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Checks whether the test run should stop.<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+
+
+
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodstartTest"></a>
+	<h3>method startTest <span class="smalllinenumber">[line <a href="..//__filesource/fsource_PHPUnit__testsPHPUnitTestResult.php.html#a236">236</a>]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>void startTest(
+object
+&$test)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Informs the result that a test will be started.<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+
+
+
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">object&nbsp;&nbsp;</td>
+        <td><b>&$test</b>&nbsp;&nbsp;</td>
+        <td></td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodstop"></a>
+	<h3>method stop <span class="smalllinenumber">[line <a href="..//__filesource/fsource_PHPUnit__testsPHPUnitTestResult.php.html#a247">247</a>]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>void stop(
+)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Marks that the test run should stop.<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+
+
+
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodtoHTML"></a>
+	<h3>method toHTML <span class="smalllinenumber">[line <a href="..//__filesource/fsource_PHPUnit__testsPHPUnitTestResult.php.html#a257">257</a>]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>string toHTML(
+)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Returns a HTML representation of the test result.<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+
+
+
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodtoHtmlTable"></a>
+	<h3>method toHtmlTable <span class="smalllinenumber">[line <a href="..//__filesource/fsource_PHPUnit__testsPHPUnitTestResult.php.html#a295">295</a>]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>string toHtmlTable(
+)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Returns a Html colored Table representation of the test result.<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+
+
+
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodtoString"></a>
+	<h3>method toString <span class="smalllinenumber">[line <a href="..//__filesource/fsource_PHPUnit__testsPHPUnitTestResult.php.html#a267">267</a>]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>string toString(
+)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Returns a text representation of the test result.<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+
+
+
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodwasSuccessful"></a>
+	<h3>method wasSuccessful <span class="smalllinenumber">[line <a href="..//__filesource/fsource_PHPUnit__testsPHPUnitTestResult.php.html#a322">322</a>]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>boolean wasSuccessful(
+)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Returns whether the entire test was successful or not.<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+
+
+
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+</div><br />
+
+        <div class="credit">
+		    <hr />
+		    Documentation generated on Fri, 28 Nov 2003 13:12:02 +0100 by <a href="http://www.phpdoc.org">phpDocumentor 1.2.3</a>
+	      </div>
+      </td></tr></table>
+    </td>
+  </tr>
+</table>
+
+</body>
+</html>

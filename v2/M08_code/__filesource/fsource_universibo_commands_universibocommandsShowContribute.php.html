@@ -1,0 +1,59 @@
+<html>
+<head>
+<title>File Source for ShowContribute.php</title>
+<link rel="stylesheet" type="text/css" href="../media/style.css">
+</head>
+<body>
+
+<table border="0" cellspacing="0" cellpadding="0" height="48" width="100%">
+  <tr>
+    <td class="header_top">universibo</td>
+  </tr>
+  <tr><td class="header_line"><img src="../media/empty.png" width="1" height="1" border="0" alt=""  /></td></tr>
+  <tr>
+    <td class="header_menu">
+  		  [ <a href="../classtrees_universibo.html" class="menu">class tree: universibo</a> ]
+		  [ <a href="../elementindex_universibo.html" class="menu">index: universibo</a> ]
+		  [ <a href="../elementindex.html" class="menu">all elements</a> ]
+    </td>
+  </tr>
+  <tr><td class="header_line"><img src="../media/empty.png" width="1" height="1" border="0" alt=""  /></td></tr>
+</table>
+
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+  <tr valign="top">
+    <td width="200" class="menu">
+	<div id="todolist">
+			<p><a href="../todolist.html">Todo List</a></p>
+	</div>
+      <b>Packages:</b><br />
+              <a href="../li_undefined_package.html">undefined_package</a><br />
+              <a href="../li_DB.html">DB</a><br />
+              <a href="../li_framework.html">framework</a><br />
+              <a href="../li_kronos.html">kronos</a><br />
+              <a href="../li_PHPMailer.html">PHPMailer</a><br />
+              <a href="../li_PHPUnit.html">PHPUnit</a><br />
+              <a href="../li_Smarty.html">Smarty</a><br />
+              <a href="../li_universibo.html">universibo</a><br />
+              <a href="../li_universibo_tests.html">universibo_tests</a><br />
+            <br /><br />
+                  
+      
+          </td>
+    <td>
+      <table cellpadding="10" cellspacing="0" width="100%" border="0"><tr><td valign="top">
+
+<h1 align="center">Source for file ShowContribute.php</h1>
+<p>Documentation is available at <a href="../universibo/commands/_universibo2_universibo_commands_ShowContribute_php.html">ShowContribute.php</a></p>
+<pre><a name="a1"></a><br />1     <strong>&lt;?php</strong><a name="a2"></a><br />2     <a name="a3"></a><br />3     <font color="blue">include</font> <strong>(</strong><font color="#66cccc">'UniversiboCommand'</font>.PHP_EXTENSION<strong>)</strong>;<a name="a4"></a><br />4     <a name="a5"></a><br />5     <font color="#009999">/**</font><a name="a6"></a><br />6     <font color="#009999"> * ShowContributes is an extension of UniversiboCommand class.</font><a name="a7"></a><br />7     <font color="#009999"> *</font><a name="a8"></a><br />8     <font color="#009999"> * It shows Contribute page</font><a name="a9"></a><br />9     <font color="#009999"> *</font><a name="a10"></a><br />10    <font color="#009999"> *</font><font color="#009999"> </font><strong><font color = "#0099FF">@package</font></strong><font color="#009999"> universibo</font><a name="a11"></a><br />11    <font color="#009999"> *</font><font color="#009999"> </font><strong><font color = "#0099FF">@subpackage</font></strong><font color="#009999"> commands</font><a name="a12"></a><br />12    <font color="#009999"> *</font><font color="#009999"> </font><strong><font color = "#0099FF">@version</font></strong><font color="#009999"> 2.0.0</font><a name="a13"></a><br />13    <font color="#009999"> *</font><font color="#009999"> </font><strong><font color = "#0099FF">@author</font></strong><font color="#009999"> Fabrizio Pinto</font><a name="a14"></a><br />14    <font color="#009999"> *</font><font color="#009999"> </font><strong><font color = "#0099FF">@author</font></strong><font color="#009999"> Ilias Bartolini &lt;brain79@virgilio.it&gt;</font><a name="a15"></a><br />15    <font color="#009999"> *</font><font color="#009999"> </font><strong><font color = "#0099FF">@license</font></strong><font color="#009999"> GPL, </font><em><font color="#0099FF">{@link http://www.opensource.org/licenses/gpl-license.php}</font></em><font color="#009999"></font><a name="a16"></a><br />16    <font color="#009999"> */</font><a name="a17"></a><br />17     <a name="a18"></a><br />18    <font color="blue">class</font> <a href="../universibo/commands/ShowContribute.html">ShowContribute</a> <font color="blue">extends</font> <a href="../universibo/UniversiboCommand.html">UniversiboCommand</a> <strong>{</strong><a name="a19"></a><br />19        <font color="blue">function</font> <a href="../universibo/commands/ShowContribute.html#methodexecute">execute</a><strong>(</strong><strong>)</strong><strong>{</strong><a name="a20"></a><br />20    <a name="a21"></a><br />21            <strong>$template</strong> =<strong>&amp;</strong> <strong>$this</strong><strong>-&gt;</strong><a href="../framework/BaseCommand.html#var$frontController">frontController</a><strong>-&gt;</strong>getTemplateEngine<strong>(</strong><strong>)</strong>;<a name="a22"></a><br />22            <a name="a23"></a><br />23            <strong>$template</strong><strong>-&gt;</strong>assign<strong>(</strong><font color="#66cccc">'contributes_langTitleAlt'</font><strong>,</strong><font color="#66cccc">'Collabora'</font><strong>)</strong>;<a name="a24"></a><br />24            <strong>$template</strong><strong>-&gt;</strong>assign<strong>(</strong><font color="#66cccc">'contributes_langIntro'</font><strong>,</strong><font color="#66cccc">'&lt;p&gt;UniversiBo &amp;egrave; un sito che nasce </font><a name="a25"></a><br />25    <font color="#66cccc">        dalla collaborazione tra studenti, docenti e strutture universitarie. </font><a name="a26"></a><br />26    <font color="#66cccc">        I docenti sono stati disponibili a dare il loro contributo e li ringraziamo </font><a name="a27"></a><br />27    <font color="#66cccc">        per questo. Ma per permettere che questo portale continui la sua vita </font><a name="a28"></a><br />28    <font color="#66cccc">        occorre che anche gli studenti collaborino.&lt;/p&gt;</font><a name="a29"></a><br />29    <font color="#66cccc">      &lt;p&gt; Noi non vogliamo obbligare nessuno, ma se veramente pensate che il servizio </font><a name="a30"></a><br />30    <font color="#66cccc">        che offriamo sia utile e desiderate che continui a essere disponibile </font><a name="a31"></a><br />31    <font color="#66cccc">        per tutti allora aiutateci a rendere questo portale ancora migliore.&lt;/p&gt;'</font><strong>)</strong>;<a name="a32"></a><br />32            <strong>$template</strong><strong>-&gt;</strong>assign<strong>(</strong><font color="#66cccc">'contributes_langTitle'</font><strong>,</strong><font color="#66cccc">'-- Come fare per collaborare? --'</font><strong>)</strong>;<a name="a33"></a><br />33            <strong>$template</strong><strong>-&gt;</strong>assign<strong>(</strong><font color="#66cccc">'contributes_langHowToContribute'</font><strong>,</strong><font color="#66cccc">'&lt;p&gt;Non vi chiediamo di dedicare al progetto tutta la vostra vita universitaria! </font><a name="a34"></a><br />34    <font color="#66cccc">        Le modalit&amp;agrave; di collaborazione sono tante e ognuna richiede tempi </font><a name="a35"></a><br />35    <font color="#66cccc">        diversi. Eccovi un breve elenco di ci&amp;ograve; che potreste fare per aiutarci:&lt;/p&gt;</font><a name="a36"></a><br />36    <font color="#66cccc">      &lt;ul&gt;</font><a name="a37"></a><br />37    <font color="#66cccc">        &lt;li&gt;potreste occuparvi di aggiungere &lt;strong&gt;contenuti&lt;/strong&gt; al sito: </font><a name="a38"></a><br />38    <font color="#66cccc">          se avete molto tempo potreste scrivere alcune pagine altrimenti &amp;egrave; </font><a name="a39"></a><br />39    <font color="#66cccc">          sufficiente che siate solidali con gli altri e rispondiate alle domande </font><a name="a40"></a><br />40    <font color="#66cccc">          che vengono poste nei forum.&lt;/li&gt;</font><a name="a41"></a><br />41    <font color="#66cccc">        &lt;li&gt;attualmente solo docenti e moderatori possono pubblicare news. Ma </font><a name="a42"></a><br />42    <font color="#66cccc">          se ne conoscete alcune che pensate tutti debbano conoscere potete segnalarle </font><a name="a43"></a><br />43    <font color="#66cccc">          sul forum e invitare i moderatori a pubblicarla come news. </font><a name="a44"></a><br />44    <font color="#66cccc">        &lt;/li&gt;</font><a name="a45"></a><br />45    <font color="#66cccc">        &lt;li&gt;potreste aiutarci con l\'attivit&amp;agrave; di &lt;strong&gt;moderazione &lt;/strong&gt;e </font><a name="a46"></a><br />46    <font color="#66cccc">          proporre la vostra candidatura al titolo di moderatore;&lt;/li&gt;</font><a name="a47"></a><br />47    <font color="#66cccc">        &lt;li&gt;segnalateci ogni errore o problema che riscontrate scrivendo a </font><a name="a48"></a><br />48    <font color="#66cccc">		&lt;a href=&quot;mailto:staff_universibo@calvin.ing.unibo.it&quot;&gt;staff_universibo@calvin.ing.unibo.it&lt;/a&gt;</font><a name="a49"></a><br />49    <font color="#66cccc">		oppure preferibilmente scrivendo sul forum dedicato.&lt;/li&gt;</font><a name="a50"></a><br />50    <font color="#66cccc">        &lt;li&gt;oppure potreste aiutaci nella &lt;strong&gt;progettazione&lt;/strong&gt;: scrivendo </font><a name="a51"></a><br />51    <font color="#66cccc">          contenuti, scrivendo il codice che genera le pagine, aiutandoci nell\'amministrazione </font><a name="a52"></a><br />52    <font color="#66cccc">          del database, creando immagini grafiche...&lt;/li&gt;</font><a name="a53"></a><br />53    <font color="#66cccc">        &lt;li&gt;e se non avete la possibilit&amp;agrave; di utilizzare il computer potreste </font><a name="a54"></a><br />54    <font color="#66cccc">          comunque aiutarci attraverso le &lt;strong&gt;attivit&amp;agrave; offline&lt;/strong&gt;: </font><a name="a55"></a><br />55    <font color="#66cccc">          spargere la voce ai tuoi amici dell\'esistenza del sito(pi&amp;ugrave; persone </font><a name="a56"></a><br />56    <font color="#66cccc">          lo frequenteranno, pi&amp;ugrave; persone potranno contribuirne alla sua </font><a name="a57"></a><br />57    <font color="#66cccc">          crescita), occuparvi del contatto con le aule, con i docenti...&lt;/li&gt;</font><a name="a58"></a><br />58    <font color="#66cccc">      &lt;/ul&gt;</font><a name="a59"></a><br />59    <font color="#66cccc">	  &lt;p&gt;Se quindi vi abbiamo convinto con queste poche e semplici parole e volete </font><a name="a60"></a><br />60    <font color="#66cccc">        collaborare attivamente al progetto compilate &lt;b&gt;&lt;a href=&quot;index?do=ShowQuestions&quot;&gt;questo questionario&lt;/a&gt;&lt;/b&gt;</font><a name="a61"></a><br />61    <font color="#66cccc">		e vi contatteremo al pi&amp;ugrave; presto.&lt;/p&gt;'</font><strong>)</strong>;<a name="a62"></a><br />62            <a name="a63"></a><br />63            <a name="a64"></a><br />64            <a name="a65"></a><br />65            <font color="blue">return</font> <font color="#66cccc">'default'</font>;                        <a name="a66"></a><br />66        <strong>}</strong><a name="a67"></a><br />67    <strong>}</strong><a name="a68"></a><br />68    <a name="a69"></a><br />69    <strong>?&gt;</strong></pre>
+        <div class="credit">
+		    <hr />
+		    Documentation generated on Fri, 28 Nov 2003 13:11:32 +0100 by <a href="http://www.phpdoc.org">phpDocumentor 1.2.3</a>
+	      </div>
+      </td></tr></table>
+    </td>
+  </tr>
+</table>
+
+</body>
+</html>
