@@ -13,8 +13,8 @@ Benvenuti nel nuovo sito web della documentazione tecnica [UniversiBO](https://w
 {% endfor %}
 
 ## Documentazione 
-* [Wiki associazione](https://wiki.universibo.unibo.it/)
-* [Wiki progetto (EN)](https://github.com/UniversiBO/UniversiBO/wiki)
+* [Wiki UniversiBO](https://wiki.universibo.unibo.it/)
+* [Wiki progetto GitHub (EN)](https://github.com/UniversiBO/UniversiBO/wiki)
 
 ### Vecchio materiale
 * [Documentazione in italiano](/v2/)
